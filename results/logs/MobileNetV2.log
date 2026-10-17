@@ -1,0 +1,45 @@
+2026-10-03 18:42:47,550 INFO Loading pretrained weights from Hugging Face hub (timm/mobilenetv2_100.ra_in1k)
+2026-10-03 18:42:48,850 INFO HTTP Request: HEAD https://huggingface.co/timm/mobilenetv2_100.ra_in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-10-03 18:42:49,127 INFO HTTP Request: GET https://huggingface.co/api/models/timm/mobilenetv2_100.ra_in1k/xet-read-token/5afa12513b048c79b9147a5d210e9bdc50035481 "HTTP/1.1 200 OK"
+2026-10-03 18:42:54,932 INFO [timm/mobilenetv2_100.ra_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-10-03 18:42:54,948 INFO Missing keys (classifier.weight, classifier.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-10-03 18:42:54,971 INFO MobileNetV2 | mobilenetv2_100.ra_in1k | 2.2M params | device mps | label_smoothing None
+2026-10-03 18:42:59,008 INFO MobileNetV2 ep01 s1 train 4.030/0.133 val 4.062 acc 0.133 F1 0.1054 (4s)
+2026-10-03 18:43:03,318 INFO MobileNetV2 ep02 s2 train 4.562/0.083 val 3.900 acc 0.117 F1 0.0929 (4s)
+2026-10-03 23:37:08,136 INFO Loading pretrained weights from Hugging Face hub (timm/mobilenetv2_100.ra_in1k)
+2026-10-03 23:37:08,683 INFO HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-10-03 23:37:08,905 INFO HTTP Request: HEAD https://huggingface.co/timm/mobilenetv2_100.ra_in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-10-03 23:37:08,907 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-03 23:37:08,910 INFO [timm/mobilenetv2_100.ra_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-10-03 23:37:08,944 INFO Missing keys (classifier.weight, classifier.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-10-03 23:37:08,973 INFO MobileNetV2 | mobilenetv2_100.ra_in1k | 2.2M params | device mps | label_smoothing None
+2026-10-03 23:37:31,419 INFO MobileNetV2 ep01 s1 train 2.044/0.412 val 1.114 acc 0.625 F1 0.6185 (22s)
+2026-10-03 23:37:50,498 INFO MobileNetV2 ep02 s1 train 0.807/0.726 val 0.654 acc 0.779 F1 0.7769 (19s)
+2026-10-03 23:38:09,586 INFO MobileNetV2 ep03 s1 train 0.504/0.831 val 0.491 acc 0.840 F1 0.8404 (19s)
+2026-10-03 23:38:28,772 INFO MobileNetV2 ep04 s1 train 0.363/0.873 val 0.407 acc 0.873 F1 0.8729 (19s)
+2026-10-03 23:38:48,281 INFO MobileNetV2 ep05 s1 train 0.301/0.903 val 0.372 acc 0.885 F1 0.8844 (19s)
+2026-10-03 23:39:07,211 INFO MobileNetV2 ep06 s1 train 0.254/0.913 val 0.338 acc 0.893 F1 0.8909 (19s)
+2026-10-03 23:39:26,159 INFO MobileNetV2 ep07 s1 train 0.229/0.924 val 0.311 acc 0.901 F1 0.9005 (19s)
+2026-10-03 23:39:45,009 INFO MobileNetV2 ep08 s1 train 0.198/0.941 val 0.302 acc 0.902 F1 0.8993 (19s)
+2026-10-03 23:40:03,838 INFO MobileNetV2 ep09 s1 train 0.175/0.946 val 0.275 acc 0.918 F1 0.9176 (19s)
+2026-10-03 23:40:23,030 INFO MobileNetV2 ep10 s1 train 0.170/0.947 val 0.266 acc 0.918 F1 0.9169 (19s)
+2026-10-03 23:40:53,530 INFO MobileNetV2 ep11 s2 train 1.180/0.640 val 0.608 acc 0.799 F1 0.7924 (30s)
+2026-10-03 23:41:23,731 INFO MobileNetV2 ep12 s2 train 0.468/0.840 val 0.361 acc 0.881 F1 0.8780 (30s)
+2026-10-03 23:41:53,738 INFO MobileNetV2 ep13 s2 train 0.300/0.897 val 0.291 acc 0.907 F1 0.9057 (30s)
+2026-10-03 23:42:24,125 INFO MobileNetV2 ep14 s2 train 0.247/0.918 val 0.244 acc 0.928 F1 0.9277 (30s)
+2026-10-03 23:42:54,244 INFO MobileNetV2 ep15 s2 train 0.200/0.934 val 0.248 acc 0.926 F1 0.9248 (30s)
+2026-10-03 23:43:24,787 INFO MobileNetV2 ep16 s2 train 0.179/0.940 val 0.233 acc 0.938 F1 0.9372 (30s)
+2026-10-03 23:43:55,019 INFO MobileNetV2 ep17 s2 train 0.148/0.947 val 0.220 acc 0.936 F1 0.9357 (30s)
+2026-10-03 23:44:25,110 INFO MobileNetV2 ep18 s2 train 0.141/0.953 val 0.206 acc 0.944 F1 0.9436 (30s)
+2026-10-03 23:44:55,342 INFO MobileNetV2 ep19 s2 train 0.114/0.963 val 0.224 acc 0.940 F1 0.9398 (30s)
+2026-10-03 23:45:25,462 INFO MobileNetV2 ep20 s2 train 0.117/0.962 val 0.193 acc 0.944 F1 0.9443 (30s)
+2026-10-03 23:45:55,565 INFO MobileNetV2 ep21 s2 train 0.111/0.962 val 0.180 acc 0.950 F1 0.9494 (30s)
+2026-10-03 23:46:25,705 INFO MobileNetV2 ep22 s2 train 0.105/0.968 val 0.188 acc 0.946 F1 0.9454 (30s)
+2026-10-03 23:46:55,798 INFO MobileNetV2 ep23 s2 train 0.099/0.965 val 0.188 acc 0.947 F1 0.9467 (30s)
+2026-10-03 23:47:25,850 INFO MobileNetV2 ep24 s2 train 0.094/0.967 val 0.181 acc 0.948 F1 0.9480 (30s)
+2026-10-03 23:47:55,892 INFO MobileNetV2 ep25 s2 train 0.093/0.971 val 0.164 acc 0.952 F1 0.9520 (30s)
+2026-10-03 23:48:26,054 INFO MobileNetV2 ep26 s2 train 0.082/0.971 val 0.180 acc 0.950 F1 0.9494 (30s)
+2026-10-03 23:48:56,170 INFO MobileNetV2 ep27 s2 train 0.086/0.972 val 0.193 acc 0.946 F1 0.9454 (30s)
+2026-10-03 23:49:26,256 INFO MobileNetV2 ep28 s2 train 0.090/0.969 val 0.180 acc 0.948 F1 0.9481 (30s)
+2026-10-03 23:49:56,239 INFO MobileNetV2 ep29 s2 train 0.079/0.975 val 0.185 acc 0.950 F1 0.9494 (30s)
+2026-10-03 23:50:26,705 INFO MobileNetV2 ep30 s2 train 0.087/0.972 val 0.169 acc 0.955 F1 0.9547 (30s)

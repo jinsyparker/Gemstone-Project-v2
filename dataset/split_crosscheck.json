@@ -1,0 +1,17 @@
+{
+ "delivered_split": {
+  "max_class_ratio_drift_pts": 0.17,
+  "groups_in_multiple_splits": 0,
+  "test_images": 826
+ },
+ "sklearn_StratifiedGroupKFold": {
+  "max_class_ratio_drift_pts": 1.71,
+  "groups_in_multiple_splits": 0,
+  "test_images": 790,
+  "overall_pct": {
+   "train": 71.4,
+   "validation": 14.3,
+   "test": 14.3
+  }
+ }
+}

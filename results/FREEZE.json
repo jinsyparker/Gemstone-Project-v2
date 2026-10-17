@@ -1,0 +1,24 @@
+{
+ "files": {
+  "dataset/benchmark/train.csv": "b1e91fdae1d2682b19f91ec4cde1a637f113cefae9d00700bc85f01ea29b9493",
+  "dataset/benchmark/validation.csv": "f7db8439a930ad04c14ff371c8b52a5c3ed0fa1aea92f54d1c979ab395a6d828",
+  "dataset/benchmark/test.csv": "fa5ae3cc5ff8be581f56c0764510a19bc2f48941b78896736b3cecf0c4725330",
+  "dataset/benchmark/classes.json": "716c43d55e0510edc7370d1af3a1badb9a89b7fa464aee14e8263e63b8fff6b4",
+  "models/ResNet50/best.pt": "a793e6490955201beb5a8c3db8e83cdfa8c5e27bc881199257526023750e31ea",
+  "models/DenseNet121/best.pt": "7490b038e655c8608a748f68a6166ac18033f558a4405f61d8f6c50c231a09f9",
+  "models/MobileNetV2/best.pt": "834cf1640eaa911e552bf34eb394bbe2a8d96d3f52ca83ec1d31a5bf7e6c4e5b",
+  "models/EfficientNetV2/best.pt": "e55d90dc1660872352a4a4825a5b2fd440222c878f1dd59c315c4c069dad1836",
+  "models/ConvNeXt/best.pt": "a5d271480a6e8342588711e7bdf57ab1fe9e84d7030727efd48af8c350acf507",
+  "results/test_predictions/ConvNeXt-Tiny.npz": "62892ec3bafc3a30bd85772176b362e4d1b8317ee93e96baab09aee12f69c505",
+  "results/test_predictions/DenseNet121.npz": "b6041ab90a054cc9747ca9694bb59f05ade89b5ddf769c2efcda3b4757c46ed8",
+  "results/test_predictions/EfficientNetV2-S.npz": "9a49cdd16b3483831c201da4c4d1afb64af071e287f874014a7dd32c20bd12cf",
+  "results/test_predictions/MobileNetV2.npz": "225c335e0356b60a5e0e338c40129949494c95d7fb81d61aa9ec1fe2c21a3bb4",
+  "results/test_predictions/ResNet50.npz": "2cf0d7c48009391e5b0fa152de2b2c5cf98c0c5da662197b1aac1158d9f78148",
+  "results/test_predictions/background_control.json": "b4f00aa675cc380379f6f924aa220991aa305df5ee720489c5a927ca5af61265",
+  "results/benchmark.csv": "ad17d23178cca8267ebdbc5fbe7ff87f0ab5b2edc46a9b17835b37e1a988f586",
+  "results/baseline_val.csv": "2ad1d07de852a268e06402c591d6b4aac040351be1f366edb101e7fe4cc0016c"
+ },
+ "recipe_sha256": "6e41122997adf2a812397a5708b625819c32110459af176db637cc35949c384c",
+ "frozen_at_utc": "2026-10-16T06:56:50+00:00",
+ "note": "D1/D2 split and the five baseline models are frozen. Do not retrain or re-split without a new manifest."
+}

@@ -1,0 +1,17 @@
+2026-10-03 19:09:26,438 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-10-03 19:09:26,759 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-10-03 19:09:26,765 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-10-03 19:09:26,886 INFO Missing keys (classifier.weight, classifier.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-10-03 19:09:26,942 INFO EfficientNetV2-S | tf_efficientnetv2_s.in1k | 20.2M params | device mps | label_smoothing 0.1
+2026-10-03 19:10:54,035 INFO pilot_ls0.1 ep01 s1 train 2.135/0.381 val 1.149 acc 0.596 F1 0.5876 (87s)
+2026-10-03 19:12:21,048 INFO pilot_ls0.1 ep02 s1 train 1.214/0.695 val 0.752 acc 0.775 F1 0.7706 (86s)
+2026-10-03 19:13:47,930 INFO pilot_ls0.1 ep03 s1 train 1.011/0.804 val 0.604 acc 0.845 F1 0.8437 (86s)
+2026-10-03 19:15:14,817 INFO pilot_ls0.1 ep04 s1 train 0.940/0.844 val 0.534 acc 0.864 F1 0.8620 (86s)
+2026-10-03 19:16:41,720 INFO pilot_ls0.1 ep05 s1 train 0.894/0.869 val 0.488 acc 0.885 F1 0.8837 (86s)
+2026-10-03 19:18:08,617 INFO pilot_ls0.1 ep06 s1 train 0.863/0.880 val 0.451 acc 0.886 F1 0.8852 (86s)
+2026-10-03 19:20:31,161 INFO pilot_ls0.1 ep07 s2 train 1.351/0.658 val 0.714 acc 0.770 F1 0.7683 (142s)
+2026-10-03 19:22:58,010 INFO pilot_ls0.1 ep08 s2 train 1.000/0.818 val 0.484 acc 0.861 F1 0.8593 (146s)
+2026-10-03 19:25:25,545 INFO pilot_ls0.1 ep09 s2 train 0.883/0.884 val 0.428 acc 0.875 F1 0.8738 (147s)
+2026-10-03 19:27:49,552 INFO pilot_ls0.1 ep10 s2 train 0.832/0.904 val 0.390 acc 0.909 F1 0.9081 (143s)
+2026-10-03 19:30:12,464 INFO pilot_ls0.1 ep11 s2 train 0.804/0.920 val 0.404 acc 0.893 F1 0.8913 (142s)
+2026-10-03 19:32:35,782 INFO pilot_ls0.1 ep12 s2 train 0.797/0.922 val 0.406 acc 0.897 F1 0.8960 (143s)

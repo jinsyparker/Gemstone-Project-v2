@@ -1,0 +1,11 @@
+block,model,params,test_accuracy,macro_f1,weighted_f1,precision,recall,test_loss,inference_ms_per_image,inference_ms_per_image_batch32,val_accuracy,val_macro_f1,best_epoch,epochs_run,note
+controlled,ResNet50,23528522,0.9534,0.9534,0.9535,0.9549,0.9536,0.1708,14.8600,11.2100,0.9483,0.9478,30.0000,30.0000,timm resnet50.a1_in1k
+controlled,DenseNet121,6964106,0.9574,0.9575,0.9575,0.9590,0.9576,0.1013,19.7100,10.2100,0.9669,0.9666,30.0000,30.0000,timm densenet121.ra_in1k
+controlled,MobileNetV2,2236682,0.9587,0.9593,0.9593,0.9620,0.9592,0.1166,8.7700,3.4500,0.9550,0.9547,30.0000,30.0000,timm mobilenetv2_100.ra_in1k
+controlled,EfficientNetV2-S,20190298,0.9561,0.9561,0.9561,0.9579,0.9563,0.1509,26.6900,19.0900,0.9536,0.9536,25.0000,30.0000,timm tf_efficientnetv2_s.in1k
+controlled,ConvNeXt-Tiny,27827818,0.9667,0.9672,0.9671,0.9703,0.9671,0.0914,19.2500,18.9400,0.9722,0.9723,18.0000,23.0000,timm convnext_tiny.fb_in1k
+control,Background-only random forest,,0.3063,0.3048,0.3049,0.3061,0.3063,3.5664,,,,,,,"backdrop colour, image size, brightness only; no stone pixels"
+historical,ResNet50,,0.9758,0.9528,,0.9544,0.9529,,,,,,,,"as reported; earlier paper, 11 classes, different split, train/validation only"
+historical,EfficientNet50 (as reported),,0.9702,0.9702,,0.9718,0.9702,,,,,,,,"as reported; earlier paper, 11 classes, different split, train/validation only"
+historical,MobileNetV2,,0.9529,0.9528,,0.9544,0.9529,,,,,,,,"as reported; earlier paper, 11 classes, different split, train/validation only"
+historical,VGG16,,0.9765,0.9764,,0.9769,0.9765,,,,,,,,"as reported; earlier paper, 11 classes, different split, train/validation only"

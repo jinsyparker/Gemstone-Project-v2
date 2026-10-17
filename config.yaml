@@ -1,0 +1,130 @@
+# Single source of truth for the dataset pipeline (Deliverable 1).
+# Every threshold that affects the final train/val/test split lives here and is
+# copied into dataset/split_config.json when the split is generated.
+
+seed: 42                       # global random seed (split, sampling, embeddings)
+split_ratios: {train: 0.70, validation: 0.15, test: 0.15}
+
+paths:
+  dataset: dataset
+  raw: dataset/raw             # scraped images, <class_slug>/<filename>  (gitignored)
+  raw_html: dataset/raw_html   # cached listing pages (gitignored)
+  meta: dataset/raw_meta       # per-product parsed JSON (gitignored)
+
+# 8 original classes + 3 new ones chosen from site inventory (see DATASHEET.md).
+# `category` = slug under https://www.gempundit.com/gemstones/<category>
+# `url_stems` = product-URL slug stems (the part before '-gp<id>') that belong to the class.
+#              Star ruby / star sapphire (asterism cabochons) and *-necklace etc. are
+#              deliberately NOT included. 'pigeon-blood-ruby' is also excluded: every such
+#              product URL returns HTTP 403 to our bot UA (127 candidates, ~4% of ruby). Blue Zircon has no stem of its own: it lives
+#              under the generic 'zircon' stem and is identified by title.
+# `keywords` = lower-case strings; the product page title must contain one of them
+#              or the SKU is dropped as a label mismatch (second, independent signal).
+# NOTE: /gemstones/<category>/page/N returns HTTP 403 for our bot User-Agent, so
+#       discovery uses the sitemap; category page 1 is only used to validate the mapping.
+classes:
+  - {name: Peridot,         slug: peridot,         category: peridot,                 url_stems: [peridot],                                      keywords: [peridot]}
+  - {name: Ametrine,        slug: ametrine,        category: ametrine,                url_stems: [ametrine],                                     keywords: [ametrine]}
+  - {name: Blue Zircon,     slug: blue_zircon,     category: blue-zircon,             url_stems: [zircon],                                       keywords: [blue zircon]}
+  - {name: White Sapphire,  slug: white_sapphire,  category: white-sapphire,          url_stems: [white-sapphire],                               keywords: [white sapphire]}
+  - {name: Yellow Sapphire, slug: yellow_sapphire, category: yellow-sapphire-pukhraj, url_stems: [yellow-sapphire],                              keywords: [yellow sapphire, pukhraj]}
+  - {name: Ruby,            slug: ruby,            category: ruby,                    url_stems: [ruby],                                       keywords: [ruby]}
+  - {name: Emerald,         slug: emerald,         category: emerald,                 url_stems: [emerald],                                      keywords: [emerald]}
+  - {name: Blue Sapphire,   slug: blue_sapphire,   category: blue-sapphire,           url_stems: [blue-sapphire, royal-blue-sapphire, cornflower-blue-sapphire], keywords: [blue sapphire, neelam]}
+  - {name: Pink Sapphire,   slug: pink_sapphire,   category: pink-sapphire,           url_stems: [pink-sapphire],                                keywords: [pink sapphire]}
+  - {name: Amethyst,        slug: amethyst,        category: amethyst,                url_stems: [amethyst],                                     keywords: [amethyst]}
+  - {name: Citrine,         slug: citrine,         category: citrine,                 url_stems: [citrine],                                      keywords: [citrine, sunela]}
+
+scrape:
+  base_url: https://www.gempundit.com
+  user_agent: "GemstoneResearchBot/0.1 (academic dataset; contact: jinaykp@gmail.com)"
+  # The site's robots.txt asks for Crawl-delay: 90. The owner confirmed permission
+  # to scrape faster. Set to false to force the 90 s robots delay instead.
+  # Keep the written permission with dataset/DATASHEET.md.
+  permission_confirmed: true
+  delay_page_sec: 2.0          # min gap between HTML requests (www.gempundit.com)
+  delay_image_sec: 0.75        # min gap between image requests (imgcdn*.gempundit.com)
+  timeout_sec: 30
+  max_retries: 5
+  target_images_per_class: 500 # stone photos per class before cleaning (classes with less inventory take all)
+  # Product titles containing any of these whole words are not single loose stones.
+  exclude_title_words: [pair, pairs, set, lot, combo, parcel, necklace, ring, rings, pendant, earring, earrings, bracelet, beads, strand, rough, cabochons]
+  # Image-role rules, derived from the filename tokens after "gp<id>-".
+  # Only role == "stone" is downloaded.
+  cert_tokens: [grs, igi, gia, gii, ssef, agl, gubelin, gjepc, cert, certified, certificate, report, lab]
+  hand_tokens: [hand, ring, jewellery, jewelry, pendant, earring]
+
+audit:
+  cache: dataset/_cache          # embeddings / thumbnails (gitignored, regenerable)
+  workers: 6                     # processes for image QC
+  min_side: 256                  # px; smaller images are dropped as unusable
+  max_aspect: 3.0                # max(w/h, h/w); more extreme images are dropped
+  embed_model: vit_small_patch14_dinov2.lvd142m
+  embed_fallbacks: [resnet50.a1_in1k]
+  embed_size: 224                # whole image squashed to 224x224 (no crop: stones sit near edges)
+  embed_batch: 32
+  # --- near-duplicate detection -------------------------------------------------------------
+  # Cosine / pHash only PROPOSE candidate cross-SKU pairs. DINOv2 cosine is high (>0.95) for
+  # any two similar-cut gems on the same grey studio background, so it cannot decide duplicates
+  # by itself. A candidate is an edge (same photo / same stone) only if exact, or if SIFT matches
+  # + RANSAC similarity-transform inliers >= near_dup_sift_inliers (facet/inclusion pattern agrees).
+  pair_floor_cos: 0.92
+  pair_floor_hamming: 8
+  # SIFT is computed only inside `mask` = [x0, y0, x1, y1] as fractions of the image. This excludes the
+  # "Yellow Light"/"Back Light" text overlay (top right) and borders: without it, identical overlay text
+  # makes DIFFERENT stones match (seen on contact sheets: hundreds of false Ruby-Ruby "duplicates").
+  sift: {max_side: 640, nfeatures: 600, ratio: 0.75, ransac_px: 4.0, mask: [0.2, 0.15, 0.8, 0.95]}
+  # A cross-SKU candidate pair is an EDGE (same stone / sister stone / same photo, so one group) if
+  #   exact duplicate
+  #   OR  sift_inliers >= near_dup_sift_inliers AND stone_l1 <= near_dup_geo_stone_l1   (geometric)
+  #   OR  cos >= near_dup_cos                    AND stone_l1 <= near_dup_vis_stone_l1   (visual twin)
+  # stone_l1 = mean |diff| of the centre 6x6 of 16x16 RGB thumbnails, in [0,1]: the colour of the STONE,
+  # not the background. Chosen on contact sheets (dataset/audit/*): SIFT alone links different-coloured
+  # stones of the same cut; cosine alone links any two similar gems on the grey backdrop.
+  near_dup_sift_inliers: 20
+  near_dup_geo_stone_l1: 0.06
+  near_dup_cos: 0.97
+  near_dup_vis_stone_l1: 0.05
+  # Promo/mock-up images ("Your gemstone, after being crafted into a ring...") are not stone
+  # photographs. Any image with cosine >= template_cos to one of these exemplars is dropped.
+  template_exemplars: [amethyst/gp106340-4-191225, amethyst/gp160323-4-20626, blue_sapphire/gp119501-4-120126]
+  template_cos: 0.90
+  max_group_images: 12           # a connected component bigger than this is quarantined for review
+  split_tolerance_pts: 3.0       # allowed |achieved% - target%| per class/split (percentage points)
+
+# ---------------------------------------------------------------------------------------------
+# Deliverable 2+: controlled benchmark. ONE recipe for every model (D3 to D5 reuse it unchanged).
+# White Sapphire is excluded: 97% of its photos have a black backdrop (the other classes are grey),
+# so background alone identifies it. See dataset/DATASHEET.md.
+benchmark:
+  exclude_classes: [White Sapphire]
+  dir: dataset/benchmark         # derived 10-class lists (train/validation/test.csv, classes.json)
+  cache_size: 256                # centre-square crop of the 1.6:1 photo, resized to this (uint8 arrays)
+  input_size: 224                # train: random-resized-crop to this; eval: resize to this
+  batch_size: 32
+  num_workers: 4
+  label_smoothing: 0.0           # FROZEN. Pilot (EfficientNetV2-S, 6+6 epochs, validation only): 0.0 -> 0.9206, 0.1 -> 0.9081 macro-F1, so no smoothing
+  weight_decay: {head: 0.01, backbone: 0.05}
+  aug: {scale: [0.6, 1.0], ratio: [0.9, 1.1], jitter: 0.1}   # no hue/saturation jitter: colour is diagnostic
+  stage1: {epochs: 10, lr_head: 1.0e-3}                       # backbone frozen
+  stage2: {max_epochs: 20, unfreeze_fraction: 0.5, lr_backbone: 2.0e-5, lr_head: 1.0e-4,
+           warmup_epochs: 1, patience: 6, min_delta: 0.001}   # early stopping on validation macro-F1
+  models:                        # timm names, ImageNet-1k weights for all five
+    ResNet50:         {timm: resnet50.a1_in1k,             dir: ResNet50}
+    DenseNet121:      {timm: densenet121.ra_in1k,          dir: DenseNet121}
+    MobileNetV2:      {timm: mobilenetv2_100.ra_in1k,      dir: MobileNetV2}
+    EfficientNetV2-S: {timm: tf_efficientnetv2_s.in1k,     dir: EfficientNetV2}
+    ConvNeXt-Tiny:    {timm: convnext_tiny.fb_in1k,        dir: ConvNeXt}
+
+# ---------------------------------------------------------------------------------------------
+# Deliverable 3+: the proposed dual-branch Colour-Texture Attention network (code/proposed_model.py).
+# Trained with the SAME recipe as the baselines (benchmark: section above). The flags below are what
+# the Deliverable 5 ablation switches.
+proposed:
+  dir: Proposed                  # models/Proposed/best.pt
+  backbone: tf_efficientnetv2_s.in1k   # Branch A (ImageNet-1k, as for the baselines)
+  dim: 256                       # width of the projected features of each branch
+  dropout: 0.3
+  use_rgb: true                  # Branch A on/off
+  use_ct: true                   # Branch B (HSV + Sobel/Laplacian) on/off
+  fusion: gated                  # gated | concat | none (none only when exactly one branch is on)

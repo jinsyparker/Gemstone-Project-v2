@@ -1,0 +1,347 @@
+[
+ {
+  "model": "ResNet50",
+  "split": "test",
+  "ckpt_sha256": "a793e6490955201beb5a8c3db8e83cdfa8c5e27bc881199257526023750e31ea",
+  "purpose": "final benchmark",
+  "time_utc": "2026-10-04T04:28:18+00:00"
+ },
+ {
+  "model": "DenseNet121",
+  "split": "test",
+  "ckpt_sha256": "7490b038e655c8608a748f68a6166ac18033f558a4405f61d8f6c50c231a09f9",
+  "purpose": "final benchmark",
+  "time_utc": "2026-10-04T04:29:03+00:00"
+ },
+ {
+  "model": "MobileNetV2",
+  "split": "test",
+  "ckpt_sha256": "834cf1640eaa911e552bf34eb394bbe2a8d96d3f52ca83ec1d31a5bf7e6c4e5b",
+  "purpose": "final benchmark",
+  "time_utc": "2026-10-04T04:29:41+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S",
+  "split": "test",
+  "ckpt_sha256": "e55d90dc1660872352a4a4825a5b2fd440222c878f1dd59c315c4c069dad1836",
+  "purpose": "final benchmark",
+  "time_utc": "2026-10-04T04:30:10+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny",
+  "split": "test",
+  "ckpt_sha256": "a5d271480a6e8342588711e7bdf57ab1fe9e84d7030727efd48af8c350acf507",
+  "purpose": "final benchmark",
+  "time_utc": "2026-10-04T04:31:26+00:00"
+ },
+ {
+  "model": "background_control_rf",
+  "split": "test",
+  "ckpt_sha256": null,
+  "purpose": "control row",
+  "time_utc": "2026-10-04T04:32:24+00:00"
+ },
+ {
+  "model": "ResNet50",
+  "split": "test",
+  "variant": "fg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a793e6490955201beb5a8c3db8e83cdfa8c5e27bc881199257526023750e31ea",
+  "time_utc": "2026-10-16T07:38:07+00:00"
+ },
+ {
+  "model": "ResNet50",
+  "split": "test",
+  "variant": "bg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a793e6490955201beb5a8c3db8e83cdfa8c5e27bc881199257526023750e31ea",
+  "time_utc": "2026-10-16T07:38:16+00:00"
+ },
+ {
+  "model": "ResNet50",
+  "split": "test",
+  "variant": "swap_black",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a793e6490955201beb5a8c3db8e83cdfa8c5e27bc881199257526023750e31ea",
+  "time_utc": "2026-10-16T07:38:26+00:00"
+ },
+ {
+  "model": "ResNet50",
+  "split": "test",
+  "variant": "swap_white",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a793e6490955201beb5a8c3db8e83cdfa8c5e27bc881199257526023750e31ea",
+  "time_utc": "2026-10-16T07:38:35+00:00"
+ },
+ {
+  "model": "ResNet50",
+  "split": "test",
+  "variant": "swap_other",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a793e6490955201beb5a8c3db8e83cdfa8c5e27bc881199257526023750e31ea",
+  "time_utc": "2026-10-16T07:38:44+00:00"
+ },
+ {
+  "model": "DenseNet121",
+  "split": "test",
+  "variant": "fg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "7490b038e655c8608a748f68a6166ac18033f558a4405f61d8f6c50c231a09f9",
+  "time_utc": "2026-10-16T07:38:54+00:00"
+ },
+ {
+  "model": "DenseNet121",
+  "split": "test",
+  "variant": "bg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "7490b038e655c8608a748f68a6166ac18033f558a4405f61d8f6c50c231a09f9",
+  "time_utc": "2026-10-16T07:39:02+00:00"
+ },
+ {
+  "model": "DenseNet121",
+  "split": "test",
+  "variant": "swap_black",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "7490b038e655c8608a748f68a6166ac18033f558a4405f61d8f6c50c231a09f9",
+  "time_utc": "2026-10-16T07:39:11+00:00"
+ },
+ {
+  "model": "DenseNet121",
+  "split": "test",
+  "variant": "swap_white",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "7490b038e655c8608a748f68a6166ac18033f558a4405f61d8f6c50c231a09f9",
+  "time_utc": "2026-10-16T07:39:19+00:00"
+ },
+ {
+  "model": "DenseNet121",
+  "split": "test",
+  "variant": "swap_other",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "7490b038e655c8608a748f68a6166ac18033f558a4405f61d8f6c50c231a09f9",
+  "time_utc": "2026-10-16T07:39:28+00:00"
+ },
+ {
+  "model": "MobileNetV2",
+  "split": "test",
+  "variant": "fg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "834cf1640eaa911e552bf34eb394bbe2a8d96d3f52ca83ec1d31a5bf7e6c4e5b",
+  "time_utc": "2026-10-16T07:39:32+00:00"
+ },
+ {
+  "model": "MobileNetV2",
+  "split": "test",
+  "variant": "bg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "834cf1640eaa911e552bf34eb394bbe2a8d96d3f52ca83ec1d31a5bf7e6c4e5b",
+  "time_utc": "2026-10-16T07:39:35+00:00"
+ },
+ {
+  "model": "MobileNetV2",
+  "split": "test",
+  "variant": "swap_black",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "834cf1640eaa911e552bf34eb394bbe2a8d96d3f52ca83ec1d31a5bf7e6c4e5b",
+  "time_utc": "2026-10-16T07:39:39+00:00"
+ },
+ {
+  "model": "MobileNetV2",
+  "split": "test",
+  "variant": "swap_white",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "834cf1640eaa911e552bf34eb394bbe2a8d96d3f52ca83ec1d31a5bf7e6c4e5b",
+  "time_utc": "2026-10-16T07:39:42+00:00"
+ },
+ {
+  "model": "MobileNetV2",
+  "split": "test",
+  "variant": "swap_other",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "834cf1640eaa911e552bf34eb394bbe2a8d96d3f52ca83ec1d31a5bf7e6c4e5b",
+  "time_utc": "2026-10-16T07:39:45+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S",
+  "split": "test",
+  "variant": "fg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "e55d90dc1660872352a4a4825a5b2fd440222c878f1dd59c315c4c069dad1836",
+  "time_utc": "2026-10-16T07:40:01+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S",
+  "split": "test",
+  "variant": "bg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "e55d90dc1660872352a4a4825a5b2fd440222c878f1dd59c315c4c069dad1836",
+  "time_utc": "2026-10-16T07:40:16+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S",
+  "split": "test",
+  "variant": "swap_black",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "e55d90dc1660872352a4a4825a5b2fd440222c878f1dd59c315c4c069dad1836",
+  "time_utc": "2026-10-16T07:40:31+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S",
+  "split": "test",
+  "variant": "swap_white",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "e55d90dc1660872352a4a4825a5b2fd440222c878f1dd59c315c4c069dad1836",
+  "time_utc": "2026-10-16T07:40:46+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S",
+  "split": "test",
+  "variant": "swap_other",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "e55d90dc1660872352a4a4825a5b2fd440222c878f1dd59c315c4c069dad1836",
+  "time_utc": "2026-10-16T07:41:01+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny",
+  "split": "test",
+  "variant": "fg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a5d271480a6e8342588711e7bdf57ab1fe9e84d7030727efd48af8c350acf507",
+  "time_utc": "2026-10-16T07:41:17+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny",
+  "split": "test",
+  "variant": "bg_only",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a5d271480a6e8342588711e7bdf57ab1fe9e84d7030727efd48af8c350acf507",
+  "time_utc": "2026-10-16T07:41:33+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny",
+  "split": "test",
+  "variant": "swap_black",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a5d271480a6e8342588711e7bdf57ab1fe9e84d7030727efd48af8c350acf507",
+  "time_utc": "2026-10-16T07:41:49+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny",
+  "split": "test",
+  "variant": "swap_white",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a5d271480a6e8342588711e7bdf57ab1fe9e84d7030727efd48af8c350acf507",
+  "time_utc": "2026-10-16T07:42:05+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny",
+  "split": "test",
+  "variant": "swap_other",
+  "purpose": "background dependence (Arm A)",
+  "ckpt_sha256": "a5d271480a6e8342588711e7bdf57ab1fe9e84d7030727efd48af8c350acf507",
+  "time_utc": "2026-10-16T07:42:21+00:00"
+ },
+ {
+  "model": "MobileNetV2@bg_only",
+  "split": "test",
+  "variant": "original",
+  "purpose": "background dependence (Arm B)",
+  "ckpt_sha256": "74d82787b5a99c596582c4a72c59c02e8cec63c84c9c3054ec2c6699b090c448",
+  "time_utc": "2026-10-16T07:42:45+00:00"
+ },
+ {
+  "model": "MobileNetV2@bg_only",
+  "split": "test",
+  "variant": "fg_only",
+  "purpose": "background dependence (Arm B)",
+  "ckpt_sha256": "74d82787b5a99c596582c4a72c59c02e8cec63c84c9c3054ec2c6699b090c448",
+  "time_utc": "2026-10-16T07:42:49+00:00"
+ },
+ {
+  "model": "MobileNetV2@bg_only",
+  "split": "test",
+  "variant": "bg_only",
+  "purpose": "background dependence (Arm B)",
+  "ckpt_sha256": "74d82787b5a99c596582c4a72c59c02e8cec63c84c9c3054ec2c6699b090c448",
+  "time_utc": "2026-10-16T07:42:52+00:00"
+ },
+ {
+  "model": "MobileNetV2@fg_only",
+  "split": "test",
+  "variant": "original",
+  "purpose": "background dependence (Arm B)",
+  "ckpt_sha256": "d5646763a8115ab592f36beebe13569d1758b2f95f6a3152e7628116a8887732",
+  "time_utc": "2026-10-16T07:42:56+00:00"
+ },
+ {
+  "model": "MobileNetV2@fg_only",
+  "split": "test",
+  "variant": "fg_only",
+  "purpose": "background dependence (Arm B)",
+  "ckpt_sha256": "d5646763a8115ab592f36beebe13569d1758b2f95f6a3152e7628116a8887732",
+  "time_utc": "2026-10-16T07:42:59+00:00"
+ },
+ {
+  "model": "MobileNetV2@fg_only",
+  "split": "test",
+  "variant": "bg_only",
+  "purpose": "background dependence (Arm B)",
+  "ckpt_sha256": "d5646763a8115ab592f36beebe13569d1758b2f95f6a3152e7628116a8887732",
+  "time_utc": "2026-10-16T07:43:02+00:00"
+ },
+ {
+  "model": "Proposed",
+  "split": "test",
+  "ckpt_sha256": "cfe48502bded73660d5035e7cad7507e784569cfaecaf801fd50f2d12d69af41",
+  "purpose": "final evaluation, clean images (first test read of this model)",
+  "time_utc": "2026-10-16T11:48:59+00:00"
+ },
+ {
+  "model": "ResNet50",
+  "split": "test",
+  "ckpt_sha256": "a793e6490955201beb5a8c3db8e83cdfa8c5e27bc881199257526023750e31ea",
+  "conditions": 18,
+  "purpose": "robustness: 18 perturbation conditions",
+  "time_utc": "2026-10-16T12:12:53+00:00"
+ },
+ {
+  "model": "DenseNet121",
+  "split": "test",
+  "ckpt_sha256": "7490b038e655c8608a748f68a6166ac18033f558a4405f61d8f6c50c231a09f9",
+  "conditions": 18,
+  "purpose": "robustness: 18 perturbation conditions",
+  "time_utc": "2026-10-16T12:12:53+00:00"
+ },
+ {
+  "model": "MobileNetV2",
+  "split": "test",
+  "ckpt_sha256": "834cf1640eaa911e552bf34eb394bbe2a8d96d3f52ca83ec1d31a5bf7e6c4e5b",
+  "conditions": 18,
+  "purpose": "robustness: 18 perturbation conditions",
+  "time_utc": "2026-10-16T12:12:53+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S",
+  "split": "test",
+  "ckpt_sha256": "e55d90dc1660872352a4a4825a5b2fd440222c878f1dd59c315c4c069dad1836",
+  "conditions": 18,
+  "purpose": "robustness: 18 perturbation conditions",
+  "time_utc": "2026-10-16T12:12:54+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny",
+  "split": "test",
+  "ckpt_sha256": "a5d271480a6e8342588711e7bdf57ab1fe9e84d7030727efd48af8c350acf507",
+  "conditions": 18,
+  "purpose": "robustness: 18 perturbation conditions",
+  "time_utc": "2026-10-16T12:12:54+00:00"
+ },
+ {
+  "model": "Proposed",
+  "split": "test",
+  "ckpt_sha256": "cfe48502bded73660d5035e7cad7507e784569cfaecaf801fd50f2d12d69af41",
+  "conditions": 18,
+  "purpose": "robustness: 18 perturbation conditions",
+  "time_utc": "2026-10-16T12:12:54+00:00"
+ }
+]

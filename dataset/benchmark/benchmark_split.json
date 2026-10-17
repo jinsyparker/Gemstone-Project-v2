@@ -1,0 +1,27 @@
+{
+ "classes": [
+  "Peridot",
+  "Ametrine",
+  "Blue Zircon",
+  "Yellow Sapphire",
+  "Ruby",
+  "Emerald",
+  "Blue Sapphire",
+  "Pink Sapphire",
+  "Amethyst",
+  "Citrine"
+ ],
+ "excluded": [
+  "White Sapphire"
+ ],
+ "rows": {
+  "train": 3518,
+  "validation": 755,
+  "test": 751
+ },
+ "sha256": {
+  "train": "b1e91fdae1d2682b19f91ec4cde1a637f113cefae9d00700bc85f01ea29b9493",
+  "validation": "f7db8439a930ad04c14ff371c8b52a5c3ed0fa1aea92f54d1c979ab395a6d828",
+  "test": "fa5ae3cc5ff8be581f56c0764510a19bc2f48941b78896736b3cecf0c4725330"
+ }
+}

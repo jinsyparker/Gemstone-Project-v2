@@ -1,0 +1,361 @@
+model,split,variant,arm,recall,class
+ResNet50,test,original,A frozen baselines,1.0,Peridot
+ResNet50,test,fg_only,A frozen baselines,1.0,Peridot
+ResNet50,test,bg_only,A frozen baselines,0.7631578947368421,Peridot
+ResNet50,test,swap_black,A frozen baselines,0.8421052631578947,Peridot
+ResNet50,test,swap_white,A frozen baselines,1.0,Peridot
+ResNet50,test,swap_other,A frozen baselines,1.0,Peridot
+DenseNet121,test,original,A frozen baselines,1.0,Peridot
+DenseNet121,test,fg_only,A frozen baselines,1.0,Peridot
+DenseNet121,test,bg_only,A frozen baselines,0.013157894736842105,Peridot
+DenseNet121,test,swap_black,A frozen baselines,0.7894736842105263,Peridot
+DenseNet121,test,swap_white,A frozen baselines,0.9868421052631579,Peridot
+DenseNet121,test,swap_other,A frozen baselines,0.9868421052631579,Peridot
+MobileNetV2,test,original,A frozen baselines,1.0,Peridot
+MobileNetV2,test,fg_only,A frozen baselines,0.9868421052631579,Peridot
+MobileNetV2,test,bg_only,A frozen baselines,0.05263157894736842,Peridot
+MobileNetV2,test,swap_black,A frozen baselines,0.881578947368421,Peridot
+MobileNetV2,test,swap_white,A frozen baselines,0.9605263157894737,Peridot
+MobileNetV2,test,swap_other,A frozen baselines,0.9868421052631579,Peridot
+EfficientNetV2-S,test,original,A frozen baselines,1.0,Peridot
+EfficientNetV2-S,test,fg_only,A frozen baselines,1.0,Peridot
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.06578947368421052,Peridot
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.7236842105263158,Peridot
+EfficientNetV2-S,test,swap_white,A frozen baselines,1.0,Peridot
+EfficientNetV2-S,test,swap_other,A frozen baselines,1.0,Peridot
+ConvNeXt-Tiny,test,original,A frozen baselines,1.0,Peridot
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,1.0,Peridot
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.0,Peridot
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,1.0,Peridot
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,1.0,Peridot
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,1.0,Peridot
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.05263157894736842,Peridot
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.02631578947368421,Peridot
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.618421052631579,Peridot
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,0.9868421052631579,Peridot
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,1.0,Peridot
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.0,Peridot
+ResNet50,test,original,A frozen baselines,0.9333333333333333,Ametrine
+ResNet50,test,fg_only,A frozen baselines,0.92,Ametrine
+ResNet50,test,bg_only,A frozen baselines,0.0,Ametrine
+ResNet50,test,swap_black,A frozen baselines,0.76,Ametrine
+ResNet50,test,swap_white,A frozen baselines,0.7733333333333333,Ametrine
+ResNet50,test,swap_other,A frozen baselines,0.9066666666666666,Ametrine
+DenseNet121,test,original,A frozen baselines,0.9733333333333334,Ametrine
+DenseNet121,test,fg_only,A frozen baselines,0.9733333333333334,Ametrine
+DenseNet121,test,bg_only,A frozen baselines,0.10666666666666667,Ametrine
+DenseNet121,test,swap_black,A frozen baselines,0.8,Ametrine
+DenseNet121,test,swap_white,A frozen baselines,0.8266666666666667,Ametrine
+DenseNet121,test,swap_other,A frozen baselines,0.9733333333333334,Ametrine
+MobileNetV2,test,original,A frozen baselines,0.9466666666666667,Ametrine
+MobileNetV2,test,fg_only,A frozen baselines,0.96,Ametrine
+MobileNetV2,test,bg_only,A frozen baselines,0.0,Ametrine
+MobileNetV2,test,swap_black,A frozen baselines,0.72,Ametrine
+MobileNetV2,test,swap_white,A frozen baselines,0.6666666666666666,Ametrine
+MobileNetV2,test,swap_other,A frozen baselines,0.92,Ametrine
+EfficientNetV2-S,test,original,A frozen baselines,1.0,Ametrine
+EfficientNetV2-S,test,fg_only,A frozen baselines,0.9866666666666667,Ametrine
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.0,Ametrine
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.88,Ametrine
+EfficientNetV2-S,test,swap_white,A frozen baselines,0.92,Ametrine
+EfficientNetV2-S,test,swap_other,A frozen baselines,0.9466666666666667,Ametrine
+ConvNeXt-Tiny,test,original,A frozen baselines,0.96,Ametrine
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,0.9866666666666667,Ametrine
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.8933333333333333,Ametrine
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,0.8666666666666667,Ametrine
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,0.9733333333333334,Ametrine
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,0.9466666666666667,Ametrine
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.02666666666666667,Ametrine
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.0,Ametrine
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.5866666666666667,Ametrine
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,0.96,Ametrine
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,0.96,Ametrine
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.0,Ametrine
+ResNet50,test,original,A frozen baselines,0.9866666666666667,Blue Zircon
+ResNet50,test,fg_only,A frozen baselines,0.96,Blue Zircon
+ResNet50,test,bg_only,A frozen baselines,0.0,Blue Zircon
+ResNet50,test,swap_black,A frozen baselines,0.92,Blue Zircon
+ResNet50,test,swap_white,A frozen baselines,0.7333333333333333,Blue Zircon
+ResNet50,test,swap_other,A frozen baselines,0.9733333333333334,Blue Zircon
+DenseNet121,test,original,A frozen baselines,1.0,Blue Zircon
+DenseNet121,test,fg_only,A frozen baselines,1.0,Blue Zircon
+DenseNet121,test,bg_only,A frozen baselines,0.0,Blue Zircon
+DenseNet121,test,swap_black,A frozen baselines,0.9466666666666667,Blue Zircon
+DenseNet121,test,swap_white,A frozen baselines,0.8,Blue Zircon
+DenseNet121,test,swap_other,A frozen baselines,0.9866666666666667,Blue Zircon
+MobileNetV2,test,original,A frozen baselines,0.9866666666666667,Blue Zircon
+MobileNetV2,test,fg_only,A frozen baselines,0.96,Blue Zircon
+MobileNetV2,test,bg_only,A frozen baselines,0.013333333333333334,Blue Zircon
+MobileNetV2,test,swap_black,A frozen baselines,0.52,Blue Zircon
+MobileNetV2,test,swap_white,A frozen baselines,0.22666666666666666,Blue Zircon
+MobileNetV2,test,swap_other,A frozen baselines,0.92,Blue Zircon
+EfficientNetV2-S,test,original,A frozen baselines,0.9866666666666667,Blue Zircon
+EfficientNetV2-S,test,fg_only,A frozen baselines,1.0,Blue Zircon
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.04,Blue Zircon
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.7866666666666666,Blue Zircon
+EfficientNetV2-S,test,swap_white,A frozen baselines,0.84,Blue Zircon
+EfficientNetV2-S,test,swap_other,A frozen baselines,1.0,Blue Zircon
+ConvNeXt-Tiny,test,original,A frozen baselines,1.0,Blue Zircon
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,1.0,Blue Zircon
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.24,Blue Zircon
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,0.9866666666666667,Blue Zircon
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,0.8266666666666667,Blue Zircon
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,1.0,Blue Zircon
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.06666666666666667,Blue Zircon
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.02666666666666667,Blue Zircon
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.48,Blue Zircon
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,0.9866666666666667,Blue Zircon
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,0.9866666666666667,Blue Zircon
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.0,Blue Zircon
+ResNet50,test,original,A frozen baselines,0.88,Yellow Sapphire
+ResNet50,test,fg_only,A frozen baselines,0.84,Yellow Sapphire
+ResNet50,test,bg_only,A frozen baselines,0.0,Yellow Sapphire
+ResNet50,test,swap_black,A frozen baselines,0.76,Yellow Sapphire
+ResNet50,test,swap_white,A frozen baselines,0.5466666666666666,Yellow Sapphire
+ResNet50,test,swap_other,A frozen baselines,0.84,Yellow Sapphire
+DenseNet121,test,original,A frozen baselines,0.88,Yellow Sapphire
+DenseNet121,test,fg_only,A frozen baselines,0.88,Yellow Sapphire
+DenseNet121,test,bg_only,A frozen baselines,0.013333333333333334,Yellow Sapphire
+DenseNet121,test,swap_black,A frozen baselines,0.88,Yellow Sapphire
+DenseNet121,test,swap_white,A frozen baselines,0.7733333333333333,Yellow Sapphire
+DenseNet121,test,swap_other,A frozen baselines,0.9066666666666666,Yellow Sapphire
+MobileNetV2,test,original,A frozen baselines,0.9466666666666667,Yellow Sapphire
+MobileNetV2,test,fg_only,A frozen baselines,0.92,Yellow Sapphire
+MobileNetV2,test,bg_only,A frozen baselines,0.0,Yellow Sapphire
+MobileNetV2,test,swap_black,A frozen baselines,0.7733333333333333,Yellow Sapphire
+MobileNetV2,test,swap_white,A frozen baselines,0.6,Yellow Sapphire
+MobileNetV2,test,swap_other,A frozen baselines,0.8933333333333333,Yellow Sapphire
+EfficientNetV2-S,test,original,A frozen baselines,0.88,Yellow Sapphire
+EfficientNetV2-S,test,fg_only,A frozen baselines,0.7866666666666666,Yellow Sapphire
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.09333333333333334,Yellow Sapphire
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.37333333333333335,Yellow Sapphire
+EfficientNetV2-S,test,swap_white,A frozen baselines,0.64,Yellow Sapphire
+EfficientNetV2-S,test,swap_other,A frozen baselines,0.8,Yellow Sapphire
+ConvNeXt-Tiny,test,original,A frozen baselines,0.8933333333333333,Yellow Sapphire
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,0.8666666666666667,Yellow Sapphire
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.06666666666666667,Yellow Sapphire
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,0.9866666666666667,Yellow Sapphire
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,0.7733333333333333,Yellow Sapphire
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,0.8933333333333333,Yellow Sapphire
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.02666666666666667,Yellow Sapphire
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.09333333333333334,Yellow Sapphire
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.10666666666666667,Yellow Sapphire
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,0.92,Yellow Sapphire
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,0.92,Yellow Sapphire
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.0,Yellow Sapphire
+ResNet50,test,original,A frozen baselines,0.8974358974358975,Ruby
+ResNet50,test,fg_only,A frozen baselines,0.8461538461538461,Ruby
+ResNet50,test,bg_only,A frozen baselines,0.1282051282051282,Ruby
+ResNet50,test,swap_black,A frozen baselines,0.32051282051282054,Ruby
+ResNet50,test,swap_white,A frozen baselines,0.9615384615384616,Ruby
+ResNet50,test,swap_other,A frozen baselines,0.8974358974358975,Ruby
+DenseNet121,test,original,A frozen baselines,0.8846153846153846,Ruby
+DenseNet121,test,fg_only,A frozen baselines,0.8589743589743589,Ruby
+DenseNet121,test,bg_only,A frozen baselines,0.038461538461538464,Ruby
+DenseNet121,test,swap_black,A frozen baselines,0.5641025641025641,Ruby
+DenseNet121,test,swap_white,A frozen baselines,0.9615384615384616,Ruby
+DenseNet121,test,swap_other,A frozen baselines,0.8846153846153846,Ruby
+MobileNetV2,test,original,A frozen baselines,0.8461538461538461,Ruby
+MobileNetV2,test,fg_only,A frozen baselines,0.8461538461538461,Ruby
+MobileNetV2,test,bg_only,A frozen baselines,0.0,Ruby
+MobileNetV2,test,swap_black,A frozen baselines,0.7051282051282052,Ruby
+MobileNetV2,test,swap_white,A frozen baselines,0.9487179487179487,Ruby
+MobileNetV2,test,swap_other,A frozen baselines,0.8846153846153846,Ruby
+EfficientNetV2-S,test,original,A frozen baselines,0.8846153846153846,Ruby
+EfficientNetV2-S,test,fg_only,A frozen baselines,0.7948717948717948,Ruby
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.28205128205128205,Ruby
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.6794871794871795,Ruby
+EfficientNetV2-S,test,swap_white,A frozen baselines,0.9230769230769231,Ruby
+EfficientNetV2-S,test,swap_other,A frozen baselines,0.9358974358974359,Ruby
+ConvNeXt-Tiny,test,original,A frozen baselines,0.8717948717948718,Ruby
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,0.8205128205128205,Ruby
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.01282051282051282,Ruby
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,0.5769230769230769,Ruby
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,0.9358974358974359,Ruby
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,0.8717948717948718,Ruby
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.11538461538461539,Ruby
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.2564102564102564,Ruby
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.15384615384615385,Ruby
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,0.8461538461538461,Ruby
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,0.8589743589743589,Ruby
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.0,Ruby
+ResNet50,test,original,A frozen baselines,0.96,Emerald
+ResNet50,test,fg_only,A frozen baselines,0.96,Emerald
+ResNet50,test,bg_only,A frozen baselines,0.12,Emerald
+ResNet50,test,swap_black,A frozen baselines,0.7333333333333333,Emerald
+ResNet50,test,swap_white,A frozen baselines,0.9466666666666667,Emerald
+ResNet50,test,swap_other,A frozen baselines,0.96,Emerald
+DenseNet121,test,original,A frozen baselines,0.9733333333333334,Emerald
+DenseNet121,test,fg_only,A frozen baselines,0.9866666666666667,Emerald
+DenseNet121,test,bg_only,A frozen baselines,0.05333333333333334,Emerald
+DenseNet121,test,swap_black,A frozen baselines,0.8533333333333334,Emerald
+DenseNet121,test,swap_white,A frozen baselines,0.9866666666666667,Emerald
+DenseNet121,test,swap_other,A frozen baselines,1.0,Emerald
+MobileNetV2,test,original,A frozen baselines,0.9733333333333334,Emerald
+MobileNetV2,test,fg_only,A frozen baselines,0.9866666666666667,Emerald
+MobileNetV2,test,bg_only,A frozen baselines,0.06666666666666667,Emerald
+MobileNetV2,test,swap_black,A frozen baselines,0.7733333333333333,Emerald
+MobileNetV2,test,swap_white,A frozen baselines,0.7866666666666666,Emerald
+MobileNetV2,test,swap_other,A frozen baselines,0.96,Emerald
+EfficientNetV2-S,test,original,A frozen baselines,0.9466666666666667,Emerald
+EfficientNetV2-S,test,fg_only,A frozen baselines,0.8933333333333333,Emerald
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.0,Emerald
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.7333333333333333,Emerald
+EfficientNetV2-S,test,swap_white,A frozen baselines,0.8533333333333334,Emerald
+EfficientNetV2-S,test,swap_other,A frozen baselines,0.92,Emerald
+ConvNeXt-Tiny,test,original,A frozen baselines,0.9866666666666667,Emerald
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,0.9866666666666667,Emerald
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.02666666666666667,Emerald
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,0.9466666666666667,Emerald
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,0.9733333333333334,Emerald
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,1.0,Emerald
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.05333333333333334,Emerald
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.04,Emerald
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.08,Emerald
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,0.9733333333333334,Emerald
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,0.96,Emerald
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.013333333333333334,Emerald
+ResNet50,test,original,A frozen baselines,0.9864864864864865,Blue Sapphire
+ResNet50,test,fg_only,A frozen baselines,0.9594594594594594,Blue Sapphire
+ResNet50,test,bg_only,A frozen baselines,0.0,Blue Sapphire
+ResNet50,test,swap_black,A frozen baselines,0.9594594594594594,Blue Sapphire
+ResNet50,test,swap_white,A frozen baselines,1.0,Blue Sapphire
+ResNet50,test,swap_other,A frozen baselines,0.918918918918919,Blue Sapphire
+DenseNet121,test,original,A frozen baselines,0.9864864864864865,Blue Sapphire
+DenseNet121,test,fg_only,A frozen baselines,0.972972972972973,Blue Sapphire
+DenseNet121,test,bg_only,A frozen baselines,0.0,Blue Sapphire
+DenseNet121,test,swap_black,A frozen baselines,0.9864864864864865,Blue Sapphire
+DenseNet121,test,swap_white,A frozen baselines,0.9864864864864865,Blue Sapphire
+DenseNet121,test,swap_other,A frozen baselines,0.972972972972973,Blue Sapphire
+MobileNetV2,test,original,A frozen baselines,0.972972972972973,Blue Sapphire
+MobileNetV2,test,fg_only,A frozen baselines,0.8243243243243243,Blue Sapphire
+MobileNetV2,test,bg_only,A frozen baselines,0.44594594594594594,Blue Sapphire
+MobileNetV2,test,swap_black,A frozen baselines,0.9459459459459459,Blue Sapphire
+MobileNetV2,test,swap_white,A frozen baselines,0.9864864864864865,Blue Sapphire
+MobileNetV2,test,swap_other,A frozen baselines,0.9054054054054054,Blue Sapphire
+EfficientNetV2-S,test,original,A frozen baselines,1.0,Blue Sapphire
+EfficientNetV2-S,test,fg_only,A frozen baselines,0.9459459459459459,Blue Sapphire
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.0,Blue Sapphire
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.9864864864864865,Blue Sapphire
+EfficientNetV2-S,test,swap_white,A frozen baselines,0.9864864864864865,Blue Sapphire
+EfficientNetV2-S,test,swap_other,A frozen baselines,0.9864864864864865,Blue Sapphire
+ConvNeXt-Tiny,test,original,A frozen baselines,1.0,Blue Sapphire
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,0.9864864864864865,Blue Sapphire
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.0945945945945946,Blue Sapphire
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,0.9864864864864865,Blue Sapphire
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,1.0,Blue Sapphire
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,0.9864864864864865,Blue Sapphire
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.4864864864864865,Blue Sapphire
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.40540540540540543,Blue Sapphire
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.6216216216216216,Blue Sapphire
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,0.918918918918919,Blue Sapphire
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,0.918918918918919,Blue Sapphire
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.44594594594594594,Blue Sapphire
+ResNet50,test,original,A frozen baselines,0.9054054054054054,Pink Sapphire
+ResNet50,test,fg_only,A frozen baselines,0.8918918918918919,Pink Sapphire
+ResNet50,test,bg_only,A frozen baselines,0.013513513513513514,Pink Sapphire
+ResNet50,test,swap_black,A frozen baselines,0.8918918918918919,Pink Sapphire
+ResNet50,test,swap_white,A frozen baselines,0.7027027027027027,Pink Sapphire
+ResNet50,test,swap_other,A frozen baselines,0.8648648648648649,Pink Sapphire
+DenseNet121,test,original,A frozen baselines,0.9054054054054054,Pink Sapphire
+DenseNet121,test,fg_only,A frozen baselines,0.9324324324324325,Pink Sapphire
+DenseNet121,test,bg_only,A frozen baselines,0.0945945945945946,Pink Sapphire
+DenseNet121,test,swap_black,A frozen baselines,0.6351351351351351,Pink Sapphire
+DenseNet121,test,swap_white,A frozen baselines,0.7972972972972973,Pink Sapphire
+DenseNet121,test,swap_other,A frozen baselines,0.8648648648648649,Pink Sapphire
+MobileNetV2,test,original,A frozen baselines,0.9324324324324325,Pink Sapphire
+MobileNetV2,test,fg_only,A frozen baselines,0.9459459459459459,Pink Sapphire
+MobileNetV2,test,bg_only,A frozen baselines,0.7567567567567568,Pink Sapphire
+MobileNetV2,test,swap_black,A frozen baselines,0.8648648648648649,Pink Sapphire
+MobileNetV2,test,swap_white,A frozen baselines,0.6081081081081081,Pink Sapphire
+MobileNetV2,test,swap_other,A frozen baselines,0.8378378378378378,Pink Sapphire
+EfficientNetV2-S,test,original,A frozen baselines,0.8918918918918919,Pink Sapphire
+EfficientNetV2-S,test,fg_only,A frozen baselines,0.9324324324324325,Pink Sapphire
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.10810810810810811,Pink Sapphire
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.6351351351351351,Pink Sapphire
+EfficientNetV2-S,test,swap_white,A frozen baselines,0.7702702702702703,Pink Sapphire
+EfficientNetV2-S,test,swap_other,A frozen baselines,0.7432432432432432,Pink Sapphire
+ConvNeXt-Tiny,test,original,A frozen baselines,0.9864864864864865,Pink Sapphire
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,0.9864864864864865,Pink Sapphire
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.20270270270270271,Pink Sapphire
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,1.0,Pink Sapphire
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,0.8918918918918919,Pink Sapphire
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,0.9459459459459459,Pink Sapphire
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.013513513513513514,Pink Sapphire
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.013513513513513514,Pink Sapphire
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.24324324324324326,Pink Sapphire
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,0.8648648648648649,Pink Sapphire
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,0.8918918918918919,Pink Sapphire
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.16216216216216217,Pink Sapphire
+ResNet50,test,original,A frozen baselines,0.9864864864864865,Amethyst
+ResNet50,test,fg_only,A frozen baselines,0.9594594594594594,Amethyst
+ResNet50,test,bg_only,A frozen baselines,0.25675675675675674,Amethyst
+ResNet50,test,swap_black,A frozen baselines,0.918918918918919,Amethyst
+ResNet50,test,swap_white,A frozen baselines,0.9324324324324325,Amethyst
+ResNet50,test,swap_other,A frozen baselines,0.9594594594594594,Amethyst
+DenseNet121,test,original,A frozen baselines,0.972972972972973,Amethyst
+DenseNet121,test,fg_only,A frozen baselines,0.972972972972973,Amethyst
+DenseNet121,test,bg_only,A frozen baselines,0.3108108108108108,Amethyst
+DenseNet121,test,swap_black,A frozen baselines,0.9459459459459459,Amethyst
+DenseNet121,test,swap_white,A frozen baselines,0.972972972972973,Amethyst
+DenseNet121,test,swap_other,A frozen baselines,0.972972972972973,Amethyst
+MobileNetV2,test,original,A frozen baselines,1.0,Amethyst
+MobileNetV2,test,fg_only,A frozen baselines,0.9594594594594594,Amethyst
+MobileNetV2,test,bg_only,A frozen baselines,0.013513513513513514,Amethyst
+MobileNetV2,test,swap_black,A frozen baselines,0.7702702702702703,Amethyst
+MobileNetV2,test,swap_white,A frozen baselines,0.8513513513513513,Amethyst
+MobileNetV2,test,swap_other,A frozen baselines,0.972972972972973,Amethyst
+EfficientNetV2-S,test,original,A frozen baselines,0.9864864864864865,Amethyst
+EfficientNetV2-S,test,fg_only,A frozen baselines,0.9324324324324325,Amethyst
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.22972972972972974,Amethyst
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.918918918918919,Amethyst
+EfficientNetV2-S,test,swap_white,A frozen baselines,0.9324324324324325,Amethyst
+EfficientNetV2-S,test,swap_other,A frozen baselines,0.9459459459459459,Amethyst
+ConvNeXt-Tiny,test,original,A frozen baselines,0.972972972972973,Amethyst
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,0.972972972972973,Amethyst
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.0,Amethyst
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,0.9594594594594594,Amethyst
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,0.9594594594594594,Amethyst
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,0.972972972972973,Amethyst
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.3783783783783784,Amethyst
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.2972972972972973,Amethyst
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.3108108108108108,Amethyst
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,1.0,Amethyst
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,1.0,Amethyst
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.0,Amethyst
+ResNet50,test,original,A frozen baselines,1.0,Citrine
+ResNet50,test,fg_only,A frozen baselines,1.0,Citrine
+ResNet50,test,bg_only,A frozen baselines,0.5066666666666667,Citrine
+ResNet50,test,swap_black,A frozen baselines,0.8933333333333333,Citrine
+ResNet50,test,swap_white,A frozen baselines,0.92,Citrine
+ResNet50,test,swap_other,A frozen baselines,0.9733333333333334,Citrine
+DenseNet121,test,original,A frozen baselines,1.0,Citrine
+DenseNet121,test,fg_only,A frozen baselines,1.0,Citrine
+DenseNet121,test,bg_only,A frozen baselines,0.5733333333333334,Citrine
+DenseNet121,test,swap_black,A frozen baselines,0.9466666666666667,Citrine
+DenseNet121,test,swap_white,A frozen baselines,0.9866666666666667,Citrine
+DenseNet121,test,swap_other,A frozen baselines,1.0,Citrine
+MobileNetV2,test,original,A frozen baselines,0.9866666666666667,Citrine
+MobileNetV2,test,fg_only,A frozen baselines,0.9866666666666667,Citrine
+MobileNetV2,test,bg_only,A frozen baselines,0.0,Citrine
+MobileNetV2,test,swap_black,A frozen baselines,0.92,Citrine
+MobileNetV2,test,swap_white,A frozen baselines,0.8933333333333333,Citrine
+MobileNetV2,test,swap_other,A frozen baselines,0.9866666666666667,Citrine
+EfficientNetV2-S,test,original,A frozen baselines,0.9866666666666667,Citrine
+EfficientNetV2-S,test,fg_only,A frozen baselines,1.0,Citrine
+EfficientNetV2-S,test,bg_only,A frozen baselines,0.0,Citrine
+EfficientNetV2-S,test,swap_black,A frozen baselines,0.5333333333333333,Citrine
+EfficientNetV2-S,test,swap_white,A frozen baselines,0.88,Citrine
+EfficientNetV2-S,test,swap_other,A frozen baselines,0.9866666666666667,Citrine
+ConvNeXt-Tiny,test,original,A frozen baselines,1.0,Citrine
+ConvNeXt-Tiny,test,fg_only,A frozen baselines,1.0,Citrine
+ConvNeXt-Tiny,test,bg_only,A frozen baselines,0.013333333333333334,Citrine
+ConvNeXt-Tiny,test,swap_black,A frozen baselines,0.84,Citrine
+ConvNeXt-Tiny,test,swap_white,A frozen baselines,1.0,Citrine
+ConvNeXt-Tiny,test,swap_other,A frozen baselines,1.0,Citrine
+MobileNetV2@bg_only,test,original,B retrained MobileNetV2,0.0,Citrine
+MobileNetV2@bg_only,test,fg_only,B retrained MobileNetV2,0.02666666666666667,Citrine
+MobileNetV2@bg_only,test,bg_only,B retrained MobileNetV2,0.29333333333333333,Citrine
+MobileNetV2@fg_only,test,original,B retrained MobileNetV2,0.9733333333333334,Citrine
+MobileNetV2@fg_only,test,fg_only,B retrained MobileNetV2,0.9866666666666667,Citrine
+MobileNetV2@fg_only,test,bg_only,B retrained MobileNetV2,0.06666666666666667,Citrine

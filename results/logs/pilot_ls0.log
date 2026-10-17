@@ -1,0 +1,18 @@
+2026-10-03 18:46:11,764 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-10-03 18:46:12,044 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-10-03 18:46:12,046 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-03 18:46:12,048 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-10-03 18:46:12,166 INFO Missing keys (classifier.weight, classifier.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-10-03 18:46:12,181 INFO EfficientNetV2-S | tf_efficientnetv2_s.in1k | 20.2M params | device mps | label_smoothing 0.0
+2026-10-03 18:47:40,884 INFO pilot_ls0 ep01 s1 train 1.972/0.386 val 1.124 acc 0.608 F1 0.5995 (88s)
+2026-10-03 18:49:08,271 INFO pilot_ls0 ep02 s1 train 0.866/0.705 val 0.710 acc 0.780 F1 0.7757 (87s)
+2026-10-03 18:50:38,248 INFO pilot_ls0 ep03 s1 train 0.588/0.809 val 0.547 acc 0.840 F1 0.8386 (89s)
+2026-10-03 18:52:05,499 INFO pilot_ls0 ep04 s1 train 0.479/0.850 val 0.467 acc 0.857 F1 0.8552 (87s)
+2026-10-03 18:53:32,626 INFO pilot_ls0 ep05 s1 train 0.409/0.874 val 0.419 acc 0.877 F1 0.8757 (86s)
+2026-10-03 18:54:59,587 INFO pilot_ls0 ep06 s1 train 0.362/0.880 val 0.373 acc 0.886 F1 0.8850 (86s)
+2026-10-03 18:57:23,904 INFO pilot_ls0 ep07 s2 train 0.898/0.697 val 0.610 acc 0.793 F1 0.7907 (144s)
+2026-10-03 18:59:47,421 INFO pilot_ls0 ep08 s2 train 0.457/0.840 val 0.376 acc 0.879 F1 0.8780 (143s)
+2026-10-03 19:02:10,203 INFO pilot_ls0 ep09 s2 train 0.300/0.902 val 0.306 acc 0.902 F1 0.9003 (142s)
+2026-10-03 19:04:36,286 INFO pilot_ls0 ep10 s2 train 0.239/0.918 val 0.267 acc 0.922 F1 0.9206 (145s)
+2026-10-03 19:06:59,448 INFO pilot_ls0 ep11 s2 train 0.209/0.932 val 0.283 acc 0.919 F1 0.9177 (142s)
+2026-10-03 19:09:21,667 INFO pilot_ls0 ep12 s2 train 0.197/0.936 val 0.281 acc 0.915 F1 0.9142 (142s)

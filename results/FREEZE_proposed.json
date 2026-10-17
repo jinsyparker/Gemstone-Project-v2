@@ -1,0 +1,14 @@
+{
+ "files": {
+  "models/Proposed/best.pt": "cfe48502bded73660d5035e7cad7507e784569cfaecaf801fd50f2d12d69af41",
+  "results/baseline_history/Proposed.json": "f52ba51802e32adaa8cd42249be3f842a4954ae6f02c17fa7d1d0cef93d11bfc",
+  "code/proposed_model.py": "cb6dffc0cef90cdd5082a9925effa1ec39943ea8fbffdcc3b6b34a61336bac8d",
+  "results/test_predictions/Proposed.npz": "bd81cf5581437116a2f1eacfae88502a4e2f0f1eba8ca7213b6ef79305f9fc54",
+  "results/robustness.csv": "8d2a204d06361fd6df6543cb403d9f23180220e910483946f2940fd3e7a3d4c2",
+  "results/robustness_all_models.csv": "c8e1906891b18b257e55180bee7472a9e9e741942236e65357951741192fba1a",
+  "results/robustness_comparisons.csv": "39cc355b977633d0b39a0d4c616fb62c65f8925bc2f5d54be0badfad5916da5e"
+ },
+ "recipe_sha256": "17003aa17b2768895c72821e516471ac3b5cf1833092c8006966041552b47679",
+ "frozen_at_utc": "2026-10-16T12:13:53+00:00",
+ "note": "The proposed model (seed 42) is frozen. A redesign is a separately labelled v2, never a silent retrain."
+}

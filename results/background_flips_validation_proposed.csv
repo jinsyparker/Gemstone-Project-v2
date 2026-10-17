@@ -1,0 +1,3 @@
+model,split,variant,n_changed,to_Blue_Sapphire,to_Blue_Sapphire_share,from_Blue_Zircon,blue_sapphire_recall_original,blue_sapphire_recall_variant
+Proposed,validation,swap_white,102,77,0.7549019607843137,41,1.0,1.0
+Proposed,validation,swap_black,26,0,0.0,0,1.0,0.9866666666666667

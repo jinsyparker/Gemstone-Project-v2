@@ -1,0 +1,9 @@
+image_id,class,sku,filepath,drop_reason,qc_error
+amethyst/gp106335-4-191225,Amethyst,GP106335,dataset/raw/amethyst/gp106335-4-191225.jpg,non_stone_template,
+amethyst/gp106340-4-191225,Amethyst,GP106340,dataset/raw/amethyst/gp106340-4-191225.jpg,non_stone_template,
+amethyst/gp154505-4-221225,Amethyst,GP154505,dataset/raw/amethyst/gp154505-4-221225.jpg,non_stone_template,
+amethyst/gp160323-4-20626,Amethyst,GP160323,dataset/raw/amethyst/gp160323-4-20626.jpg,non_stone_template,
+blue_sapphire/gp119501-4-120126,Blue Sapphire,GP119501,dataset/raw/blue_sapphire/gp119501-4-120126.jpg,non_stone_template,
+pink_sapphire/gp47446-1-121120,Pink Sapphire,GP47446,dataset/raw/pink_sapphire/gp47446-1-121120.jpg,exact_dup_same_sku,
+pink_sapphire/gp47454-1-121120,Pink Sapphire,GP47454,dataset/raw/pink_sapphire/gp47454-1-121120.jpg,exact_dup_same_sku,
+pink_sapphire/gp55248-1-121120,Pink Sapphire,GP55248,dataset/raw/pink_sapphire/gp55248-1-121120.jpg,exact_dup_same_sku,

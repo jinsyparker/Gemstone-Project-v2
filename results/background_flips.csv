@@ -1,0 +1,26 @@
+model,split,variant,n_changed,top_destination,top_share,to_Blue_Sapphire_share
+ResNet50,test,fg_only,22,Pink Sapphire,0.5454545454545454,0.2727272727272727
+ResNet50,test,bg_only,613,Peridot,0.4371941272430669,0.011419249592169658
+ResNet50,test,swap_black,143,Pink Sapphire,0.5244755244755245,0.2097902097902098
+ResNet50,test,swap_white,103,Blue Sapphire,0.6796116504854369,0.6796116504854369
+ResNet50,test,swap_other,34,Pink Sapphire,0.2647058823529412,0.20588235294117646
+DenseNet121,test,fg_only,8,Pink Sapphire,0.625,0.125
+DenseNet121,test,bg_only,657,Citrine,0.3987823439878234,0.0167427701674277
+DenseNet121,test,swap_black,119,Pink Sapphire,0.29411764705882354,0.2689075630252101
+DenseNet121,test,swap_white,70,Blue Sapphire,0.5142857142857142,0.5142857142857142
+DenseNet121,test,swap_other,19,Pink Sapphire,0.2631578947368421,0.10526315789473684
+MobileNetV2,test,fg_only,36,Pink Sapphire,0.3055555555555556,0.05555555555555555
+MobileNetV2,test,bg_only,646,Pink Sapphire,0.47678018575851394,0.3188854489164087
+MobileNetV2,test,swap_black,150,Pink Sapphire,0.42,0.36
+MobileNetV2,test,swap_white,189,Blue Sapphire,0.7142857142857143,0.7142857142857143
+MobileNetV2,test,swap_other,44,Blue Sapphire,0.3181818181818182,0.3181818181818182
+EfficientNetV2-S,test,fg_only,50,Pink Sapphire,0.36,0.16
+EfficientNetV2-S,test,bg_only,690,Ruby,0.4043478260869565,0.0
+EfficientNetV2-S,test,swap_black,204,Blue Sapphire,0.6078431372549019,0.6078431372549019
+EfficientNetV2-S,test,swap_white,98,Blue Sapphire,0.5306122448979592,0.5306122448979592
+EfficientNetV2-S,test,swap_other,60,Ruby,0.26666666666666666,0.15
+ConvNeXt-Tiny,test,fg_only,11,Pink Sapphire,0.45454545454545453,0.0
+ConvNeXt-Tiny,test,bg_only,633,Ametrine,0.46129541864139023,0.07740916271721959
+ConvNeXt-Tiny,test,swap_black,61,Pink Sapphire,0.5573770491803278,0.04918032786885246
+ConvNeXt-Tiny,test,swap_white,45,Blue Sapphire,0.5111111111111111,0.5111111111111111
+ConvNeXt-Tiny,test,swap_other,12,Ruby,0.25,0.08333333333333333

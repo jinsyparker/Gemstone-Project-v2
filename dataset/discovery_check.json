@@ -1,0 +1,149 @@
+{
+ "candidates_per_class": {
+  "amethyst": 1435,
+  "emerald": 3300,
+  "blue_sapphire": 3087,
+  "yellow_sapphire": 2558,
+  "pink_sapphire": 353,
+  "white_sapphire": 800,
+  "ruby": 3031,
+  "citrine": 1550,
+  "blue_zircon": 732,
+  "peridot": 783,
+  "ametrine": 266
+ },
+ "page1_validation": [
+  {
+   "slug": "peridot",
+   "page1_items": 48,
+   "agree": 48,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": []
+  },
+  {
+   "slug": "ametrine",
+   "page1_items": 48,
+   "agree": 48,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": []
+  },
+  {
+   "slug": "blue_zircon",
+   "page1_items": 48,
+   "agree": 48,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": []
+  },
+  {
+   "slug": "white_sapphire",
+   "page1_items": 48,
+   "agree": 48,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": []
+  },
+  {
+   "slug": "yellow_sapphire",
+   "page1_items": 48,
+   "agree": 47,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": [
+    [
+     "GP163902",
+     null
+    ]
+   ]
+  },
+  {
+   "slug": "ruby",
+   "page1_items": 48,
+   "agree": 45,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": [
+    [
+     "GP129625",
+     null
+    ],
+    [
+     "GP129626",
+     null
+    ],
+    [
+     "GP163915",
+     null
+    ]
+   ]
+  },
+  {
+   "slug": "emerald",
+   "page1_items": 48,
+   "agree": 47,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": [
+    [
+     "GP163917",
+     null
+    ]
+   ]
+  },
+  {
+   "slug": "blue_sapphire",
+   "page1_items": 48,
+   "agree": 46,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": [
+    [
+     "GP163908",
+     null
+    ],
+    [
+     "GP163903",
+     null
+    ]
+   ]
+  },
+  {
+   "slug": "pink_sapphire",
+   "page1_items": 48,
+   "agree": 48,
+   "ptypes": [
+    "Pair",
+    "Single Stone"
+   ],
+   "disagree_examples": []
+  },
+  {
+   "slug": "amethyst",
+   "page1_items": 48,
+   "agree": 48,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": []
+  },
+  {
+   "slug": "citrine",
+   "page1_items": 48,
+   "agree": 48,
+   "ptypes": [
+    "Single Stone"
+   ],
+   "disagree_examples": []
+  }
+ ]
+}

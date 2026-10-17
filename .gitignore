@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+# scraped images, cached pages and regenerable caches: not committed (size + copyright)
+dataset/raw/
+dataset/raw_html/
+dataset/raw_meta/
+dataset/_cache/
+dataset/audit/
+dataset/*.log
+# model checkpoints (added in later deliverables)
+models/**/*.pt
+models/**/*.pth
+.DS_Store
