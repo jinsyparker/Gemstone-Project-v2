@@ -1,0 +1,28 @@
+2026-11-06 00:12:22,705 INFO Loading pretrained weights from Hugging Face hub (timm/convnext_tiny.fb_in1k)
+2026-11-06 00:12:23,062 INFO HTTP Request: HEAD https://huggingface.co/timm/convnext_tiny.fb_in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-06 00:12:23,067 INFO [timm/convnext_tiny.fb_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-06 00:12:23,190 INFO Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-11-06 00:12:23,233 INFO ConvNeXt-Tiny_s44 | convnext_tiny.fb_in1k | 27.8M params | device mps | label_smoothing None | seed 44 | overrides {}
+2026-11-06 00:14:00,122 INFO ConvNeXt-Tiny_s44 ep01 s1 train 1.442/0.677 val 0.932 acc 0.787 F1 0.7833 (97s)
+2026-11-06 00:15:29,355 INFO ConvNeXt-Tiny_s44 ep02 s1 train 0.736/0.841 val 0.611 acc 0.860 F1 0.8589 (89s)
+2026-11-06 00:17:01,264 INFO ConvNeXt-Tiny_s44 ep03 s1 train 0.520/0.896 val 0.480 acc 0.898 F1 0.8982 (92s)
+2026-11-06 00:18:33,943 INFO ConvNeXt-Tiny_s44 ep04 s1 train 0.411/0.912 val 0.407 acc 0.910 F1 0.9096 (92s)
+2026-11-06 00:20:06,973 INFO ConvNeXt-Tiny_s44 ep05 s1 train 0.346/0.927 val 0.361 acc 0.915 F1 0.9153 (93s)
+2026-11-06 00:21:38,123 INFO ConvNeXt-Tiny_s44 ep06 s1 train 0.305/0.927 val 0.318 acc 0.925 F1 0.9244 (91s)
+2026-11-06 00:23:08,498 INFO ConvNeXt-Tiny_s44 ep07 s1 train 0.279/0.930 val 0.292 acc 0.934 F1 0.9338 (90s)
+2026-11-06 00:24:38,719 INFO ConvNeXt-Tiny_s44 ep08 s1 train 0.250/0.944 val 0.271 acc 0.938 F1 0.9369 (90s)
+2026-11-06 00:26:08,651 INFO ConvNeXt-Tiny_s44 ep09 s1 train 0.228/0.951 val 0.264 acc 0.938 F1 0.9375 (90s)
+2026-11-06 00:27:38,980 INFO ConvNeXt-Tiny_s44 ep10 s1 train 0.205/0.954 val 0.248 acc 0.939 F1 0.9392 (90s)
+2026-11-06 00:30:06,828 INFO ConvNeXt-Tiny_s44 ep11 s2 train 0.151/0.963 val 0.151 acc 0.954 F1 0.9535 (147s)
+2026-11-06 00:32:34,665 INFO ConvNeXt-Tiny_s44 ep12 s2 train 0.075/0.978 val 0.121 acc 0.962 F1 0.9617 (147s)
+2026-11-06 00:35:01,837 INFO ConvNeXt-Tiny_s44 ep13 s2 train 0.048/0.987 val 0.116 acc 0.964 F1 0.9639 (146s)
+2026-11-06 00:37:30,440 INFO ConvNeXt-Tiny_s44 ep14 s2 train 0.032/0.993 val 0.102 acc 0.971 F1 0.9707 (148s)
+2026-11-06 00:39:59,608 INFO ConvNeXt-Tiny_s44 ep15 s2 train 0.025/0.993 val 0.110 acc 0.968 F1 0.9682 (148s)
+2026-11-06 00:42:28,824 INFO ConvNeXt-Tiny_s44 ep16 s2 train 0.019/0.997 val 0.089 acc 0.976 F1 0.9763 (149s)
+2026-11-06 00:44:58,731 INFO ConvNeXt-Tiny_s44 ep17 s2 train 0.015/0.997 val 0.093 acc 0.972 F1 0.9721 (149s)
+2026-11-06 00:47:23,940 INFO ConvNeXt-Tiny_s44 ep18 s2 train 0.013/0.998 val 0.110 acc 0.968 F1 0.9682 (145s)
+2026-11-06 00:49:49,281 INFO ConvNeXt-Tiny_s44 ep19 s2 train 0.012/0.997 val 0.101 acc 0.974 F1 0.9736 (145s)
+2026-11-06 00:52:12,574 INFO ConvNeXt-Tiny_s44 ep20 s2 train 0.009/1.000 val 0.095 acc 0.972 F1 0.9721 (143s)
+2026-11-06 00:54:33,404 INFO ConvNeXt-Tiny_s44 ep21 s2 train 0.007/0.999 val 0.104 acc 0.974 F1 0.9736 (140s)
+2026-11-06 00:56:56,982 INFO ConvNeXt-Tiny_s44 ep22 s2 train 0.007/0.999 val 0.107 acc 0.975 F1 0.9750 (143s)
+2026-11-06 00:56:57,415 INFO early stopping at epoch 22 (best val macro-F1 0.9763 at epoch 16)

@@ -1,0 +1,9 @@
+stage,images,stones,note
+"Earlier paper, Table 1 (8 classes)",3182,,"split 2,545 train / 637 validation, no test set; image files not retained"
+New scrape: gallery photos listed,8798,,"1,829 products, 11 classes"
+"Excluded by role (hand shots, certificates, other)",-3264,,"1,523 hand shots, 1,732 certificates, 9 other"
+Loose-stone photos downloaded,5534,,"one product page per stone, numbered stone views only"
+Cleaning and deduplication,-8,,"5 promo banner images, 3 exact duplicates within one product; 0 corrupt"
+After cleaning (11 classes),5526,1790.0,"near-duplicate links across products (44) merged into stone groups, none deleted"
+White Sapphire removed,-502,-161.0,97% black backdrop; see white_sapphire_exclusion.md
+Benchmark (10 classes),5024,1629.0,"train 3,518 / validation 755 / test 751"

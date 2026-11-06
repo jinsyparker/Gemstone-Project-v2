@@ -1,0 +1,43 @@
+2026-11-05 20:02:32,409 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-05 20:02:32,684 INFO HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-11-05 20:02:32,963 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-05 20:02:32,965 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-05 20:02:32,968 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-05 20:02:33,111 INFO Abl-A-FT_s43 | tf_efficientnetv2_s.in1k + colour/texture branch | 20.5M params | device mps | label_smoothing None | seed 43 | overrides {'use_rgb': True, 'use_ct': False, 'fusion': 'none'}
+2026-11-05 20:02:35,948 INFO Abl-A-FT_s43 ep01 s1 train 2.152/0.250 val 2.181 acc 0.367 F1 0.2764 (3s)
+2026-11-05 20:02:40,159 INFO Abl-A-FT_s43 ep02 s2 train 2.044/0.467 val 2.165 acc 0.417 F1 0.3355 (4s)
+2026-11-06 03:06:06,723 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-06 03:06:07,007 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-06 03:06:07,009 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-06 03:06:07,012 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-06 03:06:07,169 INFO Abl-A-FT_s43 | tf_efficientnetv2_s.in1k + colour/texture branch | 20.5M params | device mps | label_smoothing None | seed 43 | overrides {'use_rgb': True, 'use_ct': False, 'fusion': 'none'}
+2026-11-06 03:07:36,156 INFO Abl-A-FT_s43 ep01 s1 train 0.807/0.789 val 0.380 acc 0.894 F1 0.8926 (89s)
+2026-11-06 03:09:04,838 INFO Abl-A-FT_s43 ep02 s1 train 0.334/0.906 val 0.313 acc 0.914 F1 0.9139 (88s)
+2026-11-06 03:10:33,343 INFO Abl-A-FT_s43 ep03 s1 train 0.258/0.922 val 0.250 acc 0.922 F1 0.9213 (88s)
+2026-11-06 03:12:01,793 INFO Abl-A-FT_s43 ep04 s1 train 0.211/0.942 val 0.230 acc 0.932 F1 0.9329 (88s)
+2026-11-06 03:13:30,440 INFO Abl-A-FT_s43 ep05 s1 train 0.179/0.944 val 0.213 acc 0.932 F1 0.9326 (88s)
+2026-11-06 03:14:58,632 INFO Abl-A-FT_s43 ep06 s1 train 0.160/0.950 val 0.196 acc 0.936 F1 0.9363 (88s)
+2026-11-06 03:16:28,756 INFO Abl-A-FT_s43 ep07 s1 train 0.140/0.957 val 0.221 acc 0.932 F1 0.9305 (89s)
+2026-11-06 03:17:58,272 INFO Abl-A-FT_s43 ep08 s1 train 0.139/0.955 val 0.196 acc 0.943 F1 0.9423 (89s)
+2026-11-06 03:19:27,325 INFO Abl-A-FT_s43 ep09 s1 train 0.125/0.957 val 0.202 acc 0.939 F1 0.9391 (88s)
+2026-11-06 03:20:55,675 INFO Abl-A-FT_s43 ep10 s1 train 0.124/0.959 val 0.194 acc 0.940 F1 0.9406 (88s)
+2026-11-06 03:23:19,143 INFO Abl-A-FT_s43 ep11 s2 train 0.528/0.817 val 0.384 acc 0.868 F1 0.8686 (143s)
+2026-11-06 03:25:42,159 INFO Abl-A-FT_s43 ep12 s2 train 0.310/0.896 val 0.284 acc 0.910 F1 0.9100 (142s)
+2026-11-06 03:28:05,004 INFO Abl-A-FT_s43 ep13 s2 train 0.195/0.937 val 0.228 acc 0.930 F1 0.9298 (142s)
+2026-11-06 03:30:28,197 INFO Abl-A-FT_s43 ep14 s2 train 0.153/0.953 val 0.195 acc 0.940 F1 0.9401 (142s)
+2026-11-06 03:32:51,210 INFO Abl-A-FT_s43 ep15 s2 train 0.119/0.958 val 0.185 acc 0.944 F1 0.9441 (142s)
+2026-11-06 03:35:14,816 INFO Abl-A-FT_s43 ep16 s2 train 0.103/0.963 val 0.176 acc 0.944 F1 0.9442 (143s)
+2026-11-06 03:37:37,540 INFO Abl-A-FT_s43 ep17 s2 train 0.081/0.970 val 0.175 acc 0.947 F1 0.9469 (142s)
+2026-11-06 03:40:01,261 INFO Abl-A-FT_s43 ep18 s2 train 0.083/0.976 val 0.180 acc 0.943 F1 0.9426 (143s)
+2026-11-06 03:42:24,436 INFO Abl-A-FT_s43 ep19 s2 train 0.079/0.976 val 0.168 acc 0.948 F1 0.9482 (143s)
+2026-11-06 03:44:47,319 INFO Abl-A-FT_s43 ep20 s2 train 0.067/0.979 val 0.169 acc 0.950 F1 0.9496 (142s)
+2026-11-06 03:47:11,926 INFO Abl-A-FT_s43 ep21 s2 train 0.065/0.981 val 0.167 acc 0.943 F1 0.9431 (144s)
+2026-11-06 03:49:36,397 INFO Abl-A-FT_s43 ep22 s2 train 0.061/0.982 val 0.163 acc 0.952 F1 0.9523 (144s)
+2026-11-06 03:52:00,181 INFO Abl-A-FT_s43 ep23 s2 train 0.055/0.985 val 0.159 acc 0.951 F1 0.9510 (143s)
+2026-11-06 03:54:24,141 INFO Abl-A-FT_s43 ep24 s2 train 0.050/0.986 val 0.163 acc 0.950 F1 0.9494 (143s)
+2026-11-06 03:56:48,259 INFO Abl-A-FT_s43 ep25 s2 train 0.048/0.986 val 0.152 acc 0.955 F1 0.9549 (144s)
+2026-11-06 03:59:13,005 INFO Abl-A-FT_s43 ep26 s2 train 0.040/0.990 val 0.155 acc 0.959 F1 0.9591 (144s)
+2026-11-06 04:01:36,738 INFO Abl-A-FT_s43 ep27 s2 train 0.050/0.984 val 0.149 acc 0.951 F1 0.9508 (143s)
+2026-11-06 04:04:00,272 INFO Abl-A-FT_s43 ep28 s2 train 0.041/0.988 val 0.157 acc 0.952 F1 0.9524 (143s)
+2026-11-06 04:06:25,202 INFO Abl-A-FT_s43 ep29 s2 train 0.040/0.989 val 0.152 acc 0.954 F1 0.9538 (144s)
+2026-11-06 04:08:48,696 INFO Abl-A-FT_s43 ep30 s2 train 0.039/0.991 val 0.152 acc 0.954 F1 0.9537 (143s)

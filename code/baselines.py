@@ -16,8 +16,10 @@ from torch import nn
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
-def build_model(cfg: dict, name: str, pretrained: bool = True, num_classes: int | None = None) -> nn.Module:
-    """timm model with a fresh `num_classes`-way head (default: the benchmark's class count)."""
+def build_model(cfg: dict, name: str, pretrained: bool = True, num_classes: int | None = None,
+                overrides: dict | None = None) -> nn.Module:
+    """timm model with a fresh `num_classes`-way head (default: the benchmark's class count). `overrides` switch the
+    proposed model's ablation flags (use_rgb, use_ct, fusion); baselines take none."""
     if num_classes is None:
         from data import class_names
 
@@ -25,7 +27,9 @@ def build_model(cfg: dict, name: str, pretrained: bool = True, num_classes: int 
     if name == "Proposed":
         from proposed_model import build_proposed
 
-        return build_proposed(cfg, pretrained=pretrained, num_classes=num_classes)
+        return build_proposed(cfg, pretrained=pretrained, num_classes=num_classes, **(overrides or {}))
+    if overrides:
+        raise ValueError(f"{name} takes no overrides")
     spec = cfg["benchmark"]["models"][name]
     return timm.create_model(spec["timm"], pretrained=pretrained, num_classes=num_classes)
 

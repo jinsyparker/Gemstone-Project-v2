@@ -113,6 +113,17 @@ def test_resume_continues_where_it_stopped(cfg, tmp_path):
     assert [r["stage"] for r in resumed["epochs"]] == [1, 2, 2] == [r["stage"] for r in full["epochs"]]
 
 
+def test_resume_exactly_at_the_stage_boundary(cfg, tmp_path):
+    """An interruption right after the last stage-1 epoch must resume into stage 2 (a battery stop did exactly this)."""
+    full = run_tiny(cfg, tmp_path / "full", s1_epochs=2, s2_epochs=1)
+    part = tmp_path / "part"
+    run_tiny(cfg, part, s1_epochs=2, s2_epochs=0)             # stops after the last stage-1 epoch
+    resumed = tr.train_model(cfg, tiny_model(cfg), part / "ck", part / "hist.json", seed=42, limit=40,
+                             s1_epochs=2, s2_epochs=1, resume=True, name="tiny")
+    assert [r["stage"] for r in resumed["epochs"]] == [1, 1, 2] == [r["stage"] for r in full["epochs"]]
+    assert resumed["epochs"][2]["val_macro_f1"] == pytest.approx(full["epochs"][2]["val_macro_f1"])
+
+
 def test_early_stopping_in_stage_two(cfg, tmp_path):
     c = copy.deepcopy(cfg)
     c["benchmark"]["stage2"]["patience"] = 1

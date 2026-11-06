@@ -1,0 +1,11 @@
+2026-11-06 07:48:34,058 INFO Abl-B_s44 | tf_efficientnetv2_s.in1k + colour/texture branch | 1.0M params | device mps | label_smoothing None | seed 44 | overrides {'use_rgb': False, 'use_ct': True, 'fusion': 'none'}
+2026-11-06 07:48:56,363 INFO Abl-B_s44 ep01 s1 train 0.706/0.781 val 0.547 acc 0.788 F1 0.7955 (22s)
+2026-11-06 07:49:17,532 INFO Abl-B_s44 ep02 s1 train 0.407/0.863 val 0.379 acc 0.883 F1 0.8801 (21s)
+2026-11-06 07:49:38,781 INFO Abl-B_s44 ep03 s1 train 0.337/0.889 val 0.316 acc 0.893 F1 0.8845 (21s)
+2026-11-06 07:50:00,107 INFO Abl-B_s44 ep04 s1 train 0.323/0.894 val 0.244 acc 0.932 F1 0.9323 (21s)
+2026-11-06 07:50:21,417 INFO Abl-B_s44 ep05 s1 train 0.279/0.899 val 0.290 acc 0.907 F1 0.9072 (21s)
+2026-11-06 07:50:42,664 INFO Abl-B_s44 ep06 s1 train 0.275/0.905 val 0.283 acc 0.922 F1 0.9206 (21s)
+2026-11-06 07:51:04,092 INFO Abl-B_s44 ep07 s1 train 0.238/0.920 val 0.392 acc 0.872 F1 0.8687 (21s)
+2026-11-06 07:51:25,344 INFO Abl-B_s44 ep08 s1 train 0.239/0.916 val 0.228 acc 0.919 F1 0.9161 (21s)
+2026-11-06 07:51:46,586 INFO Abl-B_s44 ep09 s1 train 0.235/0.918 val 0.323 acc 0.890 F1 0.8879 (21s)
+2026-11-06 07:52:07,889 INFO Abl-B_s44 ep10 s1 train 0.218/0.929 val 0.231 acc 0.938 F1 0.9348 (21s)

@@ -1,0 +1,59 @@
+model,true,predicted,images_mean_over_seeds,stones_mean_over_seeds,share_of_true_class
+Proposed,Yellow Sapphire,Citrine,8.333333333333334,4.0,0.11111111111111112
+Proposed,Ruby,Pink Sapphire,7.666666666666667,4.333333333333333,0.09829059829059829
+Proposed,Pink Sapphire,Amethyst,3.3333333333333335,3.0,0.04504504504504505
+Proposed,Yellow Sapphire,Ametrine,1.6666666666666667,1.0,0.022222222222222223
+Proposed,Ametrine,Pink Sapphire,1.0,1.0,0.013333333333333334
+Proposed,Emerald,Blue Zircon,1.0,0.6666666666666666,0.013333333333333334
+Proposed,Pink Sapphire,Ametrine,1.0,1.0,0.013513513513513514
+Proposed,Citrine,Yellow Sapphire,0.6666666666666666,0.6666666666666666,0.008888888888888889
+Proposed,Ametrine,Amethyst,0.3333333333333333,0.3333333333333333,0.0044444444444444444
+Proposed,Yellow Sapphire,Pink Sapphire,0.3333333333333333,0.3333333333333333,0.0044444444444444444
+ConvNeXt-Tiny,Yellow Sapphire,Citrine,9.333333333333334,5.0,0.12444444444444445
+ConvNeXt-Tiny,Ruby,Pink Sapphire,9.0,4.666666666666667,0.11538461538461539
+ConvNeXt-Tiny,Ametrine,Pink Sapphire,2.0,1.0,0.02666666666666667
+ConvNeXt-Tiny,Pink Sapphire,Ruby,1.6666666666666667,1.0,0.022522522522522525
+ConvNeXt-Tiny,Amethyst,Pink Sapphire,1.6666666666666667,1.0,0.022522522522522525
+ConvNeXt-Tiny,Ametrine,Citrine,1.0,1.0,0.013333333333333334
+ConvNeXt-Tiny,Emerald,Yellow Sapphire,1.0,1.0,0.013333333333333334
+ConvNeXt-Tiny,Pink Sapphire,Amethyst,0.3333333333333333,0.3333333333333333,0.0045045045045045045
+EfficientNetV2-S,Ruby,Pink Sapphire,10.333333333333334,5.666666666666667,0.13247863247863248
+EfficientNetV2-S,Yellow Sapphire,Citrine,9.0,5.333333333333333,0.12
+EfficientNetV2-S,Emerald,Pink Sapphire,3.3333333333333335,2.6666666666666665,0.04444444444444445
+EfficientNetV2-S,Pink Sapphire,Emerald,2.0,1.6666666666666667,0.02702702702702703
+EfficientNetV2-S,Pink Sapphire,Amethyst,2.0,2.0,0.02702702702702703
+EfficientNetV2-S,Emerald,Blue Zircon,1.0,0.6666666666666666,0.013333333333333336
+EfficientNetV2-S,Pink Sapphire,Blue Zircon,1.0,1.0,0.013513513513513514
+EfficientNetV2-S,Pink Sapphire,Ruby,1.0,1.0,0.013513513513513514
+EfficientNetV2-S,Ametrine,Pink Sapphire,0.6666666666666666,0.6666666666666666,0.008888888888888887
+EfficientNetV2-S,Ametrine,Citrine,0.6666666666666666,0.3333333333333333,0.008888888888888887
+ResNet50,Ruby,Pink Sapphire,8.0,4.0,0.10256410256410256
+ResNet50,Yellow Sapphire,Citrine,7.0,4.0,0.09333333333333334
+ResNet50,Pink Sapphire,Amethyst,4.0,4.0,0.05405405405405406
+ResNet50,Ametrine,Pink Sapphire,2.0,2.0,0.02666666666666667
+ResNet50,Emerald,Yellow Sapphire,2.0,1.0,0.02666666666666667
+ResNet50,Pink Sapphire,Ruby,2.0,1.0,0.02702702702702703
+ResNet50,Ametrine,Blue Sapphire,1.0,1.0,0.013333333333333334
+ResNet50,Ametrine,Amethyst,1.0,1.0,0.013333333333333334
+ResNet50,Ametrine,Citrine,1.0,1.0,0.013333333333333334
+ResNet50,Blue Zircon,Blue Sapphire,1.0,1.0,0.013333333333333334
+DenseNet121,Ruby,Pink Sapphire,8.0,6.0,0.10256410256410256
+DenseNet121,Yellow Sapphire,Citrine,6.0,4.0,0.08
+DenseNet121,Pink Sapphire,Ruby,3.0,1.0,0.04054054054054054
+DenseNet121,Pink Sapphire,Amethyst,3.0,2.0,0.04054054054054054
+DenseNet121,Ametrine,Pink Sapphire,2.0,1.0,0.02666666666666667
+DenseNet121,Yellow Sapphire,Blue Sapphire,2.0,2.0,0.02666666666666667
+DenseNet121,Amethyst,Pink Sapphire,2.0,1.0,0.02702702702702703
+DenseNet121,Yellow Sapphire,Ametrine,1.0,1.0,0.013333333333333334
+DenseNet121,Ruby,Emerald,1.0,1.0,0.01282051282051282
+DenseNet121,Emerald,Yellow Sapphire,1.0,1.0,0.013333333333333334
+MobileNetV2,Ruby,Pink Sapphire,12.0,7.0,0.15384615384615385
+MobileNetV2,Yellow Sapphire,Citrine,4.0,2.0,0.05333333333333334
+MobileNetV2,Ametrine,Pink Sapphire,3.0,1.0,0.04
+MobileNetV2,Emerald,Pink Sapphire,2.0,1.0,0.02666666666666667
+MobileNetV2,Pink Sapphire,Ametrine,2.0,2.0,0.02702702702702703
+MobileNetV2,Pink Sapphire,Amethyst,2.0,2.0,0.02702702702702703
+MobileNetV2,Ametrine,Amethyst,1.0,1.0,0.013333333333333334
+MobileNetV2,Blue Zircon,Pink Sapphire,1.0,1.0,0.013333333333333334
+MobileNetV2,Blue Sapphire,Ametrine,1.0,1.0,0.013513513513513514
+MobileNetV2,Blue Sapphire,Blue Zircon,1.0,1.0,0.013513513513513514

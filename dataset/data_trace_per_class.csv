@@ -1,0 +1,12 @@
+class,products,listed,hand_shots,certificates,other_files,downloaded,removed_promo,removed_duplicate,kept,stones,train,validation,test,in_benchmark,earlier_paper
+Peridot,173,777,102,173,0,502,0,0,502,167,351,75,76,True,480.0
+Ametrine,179,784,104,178,1,501,0,0,501,171,351,75,75,True,262.0
+Blue Zircon,174,785,107,174,2,502,0,0,502,167,352,75,75,True,246.0
+White Sapphire,163,817,160,154,1,502,0,0,502,161,352,75,75,False,466.0
+Yellow Sapphire,164,803,156,145,0,502,0,0,502,164,351,76,75,True,442.0
+Ruby,127,760,116,122,1,521,0,0,521,127,364,79,78,True,444.0
+Emerald,154,796,154,141,0,501,0,0,501,153,351,75,75,True,446.0
+Blue Sapphire,160,786,140,146,0,500,1,0,499,160,350,75,74,True,396.0
+Pink Sapphire,168,804,157,144,3,500,0,3,497,167,348,75,74,True,
+Amethyst,180,841,171,168,1,501,4,0,497,172,348,75,74,True,
+Citrine,187,845,156,187,0,502,0,0,502,181,352,75,75,True,

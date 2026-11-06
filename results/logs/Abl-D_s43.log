@@ -1,0 +1,20 @@
+2026-11-05 20:02:43,805 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-05 20:02:44,076 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-05 20:02:44,081 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-05 20:02:44,136 INFO Abl-D_s43 | tf_efficientnetv2_s.in1k + colour/texture branch | 21.8M params | device mps | label_smoothing None | seed 43 | overrides {'use_rgb': True, 'use_ct': True, 'fusion': 'gated'}
+2026-11-05 20:02:47,640 INFO Abl-D_s43 ep01 s1 train 2.188/0.233 val 2.253 acc 0.350 F1 0.2790 (3s)
+2026-11-06 06:05:08,066 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-06 06:05:08,347 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-06 06:05:08,349 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-06 06:05:08,352 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-06 06:05:08,511 INFO Abl-D_s43 | tf_efficientnetv2_s.in1k + colour/texture branch | 21.8M params | device mps | label_smoothing None | seed 43 | overrides {'use_rgb': True, 'use_ct': True, 'fusion': 'gated'}
+2026-11-06 06:06:53,647 INFO Abl-D_s43 ep01 s1 train 0.418/0.896 val 0.168 acc 0.959 F1 0.9586 (105s)
+2026-11-06 06:08:38,888 INFO Abl-D_s43 ep02 s1 train 0.139/0.957 val 0.155 acc 0.955 F1 0.9555 (104s)
+2026-11-06 06:10:24,081 INFO Abl-D_s43 ep03 s1 train 0.101/0.967 val 0.105 acc 0.966 F1 0.9656 (105s)
+2026-11-06 06:12:09,124 INFO Abl-D_s43 ep04 s1 train 0.092/0.974 val 0.151 acc 0.954 F1 0.9541 (104s)
+2026-11-06 06:13:54,811 INFO Abl-D_s43 ep05 s1 train 0.074/0.977 val 0.117 acc 0.967 F1 0.9672 (105s)
+2026-11-06 06:15:39,495 INFO Abl-D_s43 ep06 s1 train 0.063/0.978 val 0.124 acc 0.966 F1 0.9658 (104s)
+2026-11-06 06:17:24,151 INFO Abl-D_s43 ep07 s1 train 0.039/0.989 val 0.086 acc 0.974 F1 0.9736 (104s)
+2026-11-06 06:19:09,364 INFO Abl-D_s43 ep08 s1 train 0.054/0.983 val 0.120 acc 0.956 F1 0.9561 (104s)
+2026-11-06 06:20:53,853 INFO Abl-D_s43 ep09 s1 train 0.047/0.984 val 0.116 acc 0.956 F1 0.9562 (104s)
+2026-11-06 06:22:38,343 INFO Abl-D_s43 ep10 s1 train 0.042/0.987 val 0.115 acc 0.967 F1 0.9671 (104s)

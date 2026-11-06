@@ -59,9 +59,22 @@ Up to ~500 images per class were collected (random SKU order, seed 42), so class
 - Product-photo domain only; labels are the vendor's, not independently gemmologist-verified.
 
 ## Note on earlier numbers
-The earlier manuscript quotes 3,730 images / a class table summing to 3,182 across 8 classes. The original files were
-not retained; this is a fresh scrape of a changing inventory with three additional classes, so counts differ. The new
-counts supersede them.
+The earlier conference paper's Table 1 lists 3,182 images in **8 classes** (Peridot 480, Ametrine 262, Blue Zircon 246,
+White Sapphire 466, Yellow Sapphire 442, Ruby 444, Emerald 446, Blue Sapphire 396), split 2,545 train / 637 validation
+with **no independent test set** (early stopping and the reported scores both used the validation images). Its text
+says "11 classes" while naming seven, and the project brief quotes 3,730 images; the table is the only per-class
+source. The original files were not retained, so the earlier counts cannot be re-derived. This is a fresh scrape of a
+changing inventory with three additional classes, so counts differ and the new counts supersede them.
+
+The historical rows of `results/benchmark.csv` carry the note "11 classes"; that should read "8 classes, 3,182 images,
+train/validation only". The file is part of the frozen baseline manifest, so it is corrected at the next deliberate
+re-freeze, not edited in place.
+
+## Image trace
+`dataset/data_trace.md` (rebuilt by `code/data_trace.py`): 8,798 gallery photos listed on 1,829 product pages, 5,534
+loose-stone photos downloaded, 5,526 after cleaning (1,790 stones), **5,024** after removing White Sapphire
+(1,629 stones); per-class counts in `data_trace_per_class.csv`. The backdrop evidence for the exclusion is in
+`dataset/white_sapphire_exclusion.md` and `results/white_sapphire_backdrop.csv`.
 
 ## Benchmark classes (Deliverable 2 onward): 10, without White Sapphire
 White Sapphire is excluded from model benchmarking. 97 % of its photographs have a black backdrop while nearly every

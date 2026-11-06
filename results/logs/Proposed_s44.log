@@ -1,0 +1,39 @@
+2026-11-05 22:09:34,741 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-05 22:09:35,019 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-05 22:09:35,021 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-05 22:09:35,023 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-05 22:09:35,077 INFO Proposed_s44 | tf_efficientnetv2_s.in1k + colour/texture branch | 21.8M params | device mps | label_smoothing None | seed 44 | overrides {}
+2026-11-05 23:00:26,106 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-05 23:00:26,388 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-05 23:00:26,394 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-05 23:00:26,550 INFO Proposed_s44 | tf_efficientnetv2_s.in1k + colour/texture branch | 21.8M params | device mps | label_smoothing None | seed 44 | overrides {}
+2026-11-05 23:02:09,813 INFO Proposed_s44 ep01 s1 train 0.426/0.899 val 0.162 acc 0.952 F1 0.9518 (103s)
+2026-11-05 23:03:52,700 INFO Proposed_s44 ep02 s1 train 0.126/0.959 val 0.145 acc 0.963 F1 0.9632 (102s)
+2026-11-05 23:05:35,502 INFO Proposed_s44 ep03 s1 train 0.105/0.969 val 0.115 acc 0.970 F1 0.9695 (102s)
+2026-11-05 23:07:18,251 INFO Proposed_s44 ep04 s1 train 0.088/0.972 val 0.111 acc 0.966 F1 0.9657 (102s)
+2026-11-05 23:09:01,102 INFO Proposed_s44 ep05 s1 train 0.072/0.978 val 0.249 acc 0.921 F1 0.9224 (102s)
+2026-11-05 23:10:43,602 INFO Proposed_s44 ep06 s1 train 0.066/0.978 val 0.144 acc 0.955 F1 0.9542 (102s)
+2026-11-05 23:12:26,153 INFO Proposed_s44 ep07 s1 train 0.054/0.983 val 0.139 acc 0.956 F1 0.9562 (102s)
+2026-11-05 23:14:08,966 INFO Proposed_s44 ep08 s1 train 0.056/0.982 val 0.111 acc 0.974 F1 0.9736 (102s)
+2026-11-05 23:15:55,019 INFO Proposed_s44 ep09 s1 train 0.044/0.987 val 0.133 acc 0.954 F1 0.9539 (105s)
+2026-11-05 23:17:42,781 INFO Proposed_s44 ep10 s1 train 0.040/0.987 val 0.158 acc 0.951 F1 0.9514 (107s)
+2026-11-05 23:20:32,657 INFO Proposed_s44 ep11 s2 train 0.152/0.945 val 0.164 acc 0.946 F1 0.9463 (170s)
+2026-11-05 23:23:16,174 INFO Proposed_s44 ep12 s2 train 0.075/0.974 val 0.119 acc 0.971 F1 0.9711 (163s)
+2026-11-05 23:26:03,743 INFO Proposed_s44 ep13 s2 train 0.055/0.980 val 0.117 acc 0.972 F1 0.9724 (167s)
+2026-11-05 23:28:45,808 INFO Proposed_s44 ep14 s2 train 0.040/0.987 val 0.091 acc 0.975 F1 0.9750 (162s)
+2026-11-05 23:31:31,406 INFO Proposed_s44 ep15 s2 train 0.036/0.989 val 0.108 acc 0.971 F1 0.9711 (165s)
+2026-11-05 23:34:16,606 INFO Proposed_s44 ep16 s2 train 0.033/0.990 val 0.096 acc 0.977 F1 0.9777 (165s)
+2026-11-05 23:37:02,253 INFO Proposed_s44 ep17 s2 train 0.024/0.993 val 0.093 acc 0.976 F1 0.9763 (164s)
+2026-11-05 23:39:50,706 INFO Proposed_s44 ep18 s2 train 0.027/0.990 val 0.113 acc 0.967 F1 0.9670 (168s)
+2026-11-05 23:43:08,362 INFO Proposed_s44 ep19 s2 train 0.019/0.995 val 0.092 acc 0.975 F1 0.9750 (197s)
+2026-11-05 23:46:09,542 INFO Proposed_s44 ep20 s2 train 0.022/0.993 val 0.103 acc 0.974 F1 0.9737 (181s)
+2026-11-05 23:48:55,742 INFO Proposed_s44 ep21 s2 train 0.020/0.994 val 0.095 acc 0.975 F1 0.9750 (166s)
+2026-11-05 23:51:44,772 INFO Proposed_s44 ep22 s2 train 0.017/0.995 val 0.096 acc 0.979 F1 0.9790 (168s)
+2026-11-05 23:55:02,563 INFO Proposed_s44 ep23 s2 train 0.015/0.997 val 0.086 acc 0.980 F1 0.9803 (193s)
+2026-11-05 23:58:09,316 INFO Proposed_s44 ep24 s2 train 0.014/0.997 val 0.099 acc 0.974 F1 0.9737 (185s)
+2026-11-06 00:00:57,782 INFO Proposed_s44 ep25 s2 train 0.010/0.998 val 0.084 acc 0.976 F1 0.9763 (168s)
+2026-11-06 00:03:47,532 INFO Proposed_s44 ep26 s2 train 0.011/0.998 val 0.091 acc 0.975 F1 0.9750 (169s)
+2026-11-06 00:06:37,117 INFO Proposed_s44 ep27 s2 train 0.009/0.998 val 0.091 acc 0.976 F1 0.9764 (169s)
+2026-11-06 00:09:24,720 INFO Proposed_s44 ep28 s2 train 0.012/0.997 val 0.101 acc 0.975 F1 0.9750 (167s)
+2026-11-06 00:12:16,859 INFO Proposed_s44 ep29 s2 train 0.011/0.998 val 0.100 acc 0.975 F1 0.9750 (172s)
+2026-11-06 00:12:17,420 INFO early stopping at epoch 29 (best val macro-F1 0.9803 at epoch 23)

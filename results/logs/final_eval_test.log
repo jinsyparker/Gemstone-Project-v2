@@ -1,0 +1,54 @@
+2026-11-06 09:20:17,730 INFO Proposed_s42 regression vs earlier outputs: {'clean_max_abs_logit_diff': 0.0, 'clean_pred_identical': True, 'robustness_min_agreement': 1.0}
+2026-11-06 09:20:17,732 INFO Proposed_s42 -> results/final/Proposed_s42.npz
+2026-11-06 09:29:58,281 INFO ConvNeXt-Tiny_s42 regression vs earlier outputs: {'clean_max_abs_logit_diff': 0.0, 'clean_pred_identical': True, 'robustness_min_agreement': 1.0}
+2026-11-06 09:29:58,282 INFO ConvNeXt-Tiny_s42 -> results/final/ConvNeXt-Tiny_s42.npz
+2026-11-06 09:39:16,487 INFO EfficientNetV2-S_s42 regression vs earlier outputs: {'clean_max_abs_logit_diff': 0.0, 'clean_pred_identical': True, 'robustness_min_agreement': 1.0}
+2026-11-06 09:39:16,492 INFO EfficientNetV2-S_s42 -> results/final/EfficientNetV2-S_s42.npz
+2026-11-06 09:48:58,304 INFO Proposed_s43 regression vs earlier outputs: {}
+2026-11-06 09:48:58,306 INFO Proposed_s43 -> results/final/Proposed_s43.npz
+2026-11-06 09:58:40,520 INFO ConvNeXt-Tiny_s43 regression vs earlier outputs: {}
+2026-11-06 09:58:40,522 INFO ConvNeXt-Tiny_s43 -> results/final/ConvNeXt-Tiny_s43.npz
+2026-11-06 10:25:41,390 INFO EfficientNetV2-S_s43 regression vs earlier outputs: {}
+2026-11-06 10:25:41,392 INFO EfficientNetV2-S_s43 -> results/final/EfficientNetV2-S_s43.npz
+2026-11-06 10:35:14,901 INFO Proposed_s44 regression vs earlier outputs: {}
+2026-11-06 10:35:14,903 INFO Proposed_s44 -> results/final/Proposed_s44.npz
+2026-11-06 10:44:34,475 INFO ConvNeXt-Tiny_s44 regression vs earlier outputs: {}
+2026-11-06 10:44:34,476 INFO ConvNeXt-Tiny_s44 -> results/final/ConvNeXt-Tiny_s44.npz
+2026-11-06 10:53:38,950 INFO EfficientNetV2-S_s44 regression vs earlier outputs: {}
+2026-11-06 10:53:38,951 INFO EfficientNetV2-S_s44 -> results/final/EfficientNetV2-S_s44.npz
+2026-11-06 10:59:15,730 INFO ResNet50_s42 regression vs earlier outputs: {'clean_max_abs_logit_diff': 0.0, 'clean_pred_identical': True, 'robustness_min_agreement': 1.0}
+2026-11-06 10:59:15,731 INFO ResNet50_s42 -> results/final/ResNet50_s42.npz
+2026-11-06 11:04:26,595 INFO DenseNet121_s42 regression vs earlier outputs: {'clean_max_abs_logit_diff': 0.0, 'clean_pred_identical': True, 'robustness_min_agreement': 1.0}
+2026-11-06 11:04:26,597 INFO DenseNet121_s42 -> results/final/DenseNet121_s42.npz
+2026-11-06 11:06:48,543 INFO MobileNetV2_s42 regression vs earlier outputs: {'clean_max_abs_logit_diff': 0.0, 'clean_pred_identical': True, 'robustness_min_agreement': 1.0}
+2026-11-06 11:06:48,544 INFO MobileNetV2_s42 -> results/final/MobileNetV2_s42.npz
+2026-11-06 11:15:42,305 INFO Abl-A_s42 regression vs earlier outputs: {}
+2026-11-06 11:15:42,306 INFO Abl-A_s42 -> results/final/Abl-A_s42.npz
+2026-11-06 11:24:46,639 INFO Abl-A_s43 regression vs earlier outputs: {}
+2026-11-06 11:24:46,641 INFO Abl-A_s43 -> results/final/Abl-A_s43.npz
+2026-11-06 11:33:40,508 INFO Abl-A_s44 regression vs earlier outputs: {}
+2026-11-06 11:33:40,510 INFO Abl-A_s44 -> results/final/Abl-A_s44.npz
+2026-11-06 11:35:18,440 INFO Abl-B_s42 regression vs earlier outputs: {}
+2026-11-06 11:35:18,440 INFO Abl-B_s42 -> results/final/Abl-B_s42.npz
+2026-11-06 11:36:41,203 INFO Abl-B_s43 regression vs earlier outputs: {}
+2026-11-06 11:36:41,204 INFO Abl-B_s43 -> results/final/Abl-B_s43.npz
+2026-11-06 11:38:11,693 INFO Abl-B_s44 regression vs earlier outputs: {}
+2026-11-06 11:38:11,694 INFO Abl-B_s44 -> results/final/Abl-B_s44.npz
+2026-11-06 11:47:54,769 INFO Abl-C_s42 regression vs earlier outputs: {}
+2026-11-06 11:47:54,772 INFO Abl-C_s42 -> results/final/Abl-C_s42.npz
+2026-11-06 11:57:41,199 INFO Abl-C_s43 regression vs earlier outputs: {}
+2026-11-06 11:57:41,202 INFO Abl-C_s43 -> results/final/Abl-C_s43.npz
+2026-11-06 12:07:19,492 INFO Abl-C_s44 regression vs earlier outputs: {}
+2026-11-06 12:07:19,493 INFO Abl-C_s44 -> results/final/Abl-C_s44.npz
+2026-11-06 12:16:52,112 INFO Abl-D_s42 regression vs earlier outputs: {}
+2026-11-06 12:16:52,113 INFO Abl-D_s42 -> results/final/Abl-D_s42.npz
+2026-11-06 12:26:31,437 INFO Abl-D_s43 regression vs earlier outputs: {}
+2026-11-06 12:26:31,438 INFO Abl-D_s43 -> results/final/Abl-D_s43.npz
+2026-11-06 12:36:21,128 INFO Abl-D_s44 regression vs earlier outputs: {}
+2026-11-06 12:36:21,134 INFO Abl-D_s44 -> results/final/Abl-D_s44.npz
+2026-11-06 12:45:17,083 INFO Abl-A-FT_s42 regression vs earlier outputs: {}
+2026-11-06 12:45:17,085 INFO Abl-A-FT_s42 -> results/final/Abl-A-FT_s42.npz
+2026-11-06 12:54:21,019 INFO Abl-A-FT_s43 regression vs earlier outputs: {}
+2026-11-06 12:54:21,022 INFO Abl-A-FT_s43 -> results/final/Abl-A-FT_s43.npz
+2026-11-06 13:03:36,056 INFO Abl-A-FT_s44 regression vs earlier outputs: {}
+2026-11-06 13:03:36,058 INFO Abl-A-FT_s44 -> results/final/Abl-A-FT_s44.npz

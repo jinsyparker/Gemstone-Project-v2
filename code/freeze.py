@@ -23,7 +23,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import ROOT, load_config  # noqa: E402
 
 FREEZE = ROOT / "results" / "FREEZE.json"          # kept for backwards compatibility with the tests
-MANIFESTS = {"baselines": FREEZE, "proposed": ROOT / "results" / "FREEZE_proposed.json"}
+MANIFESTS = {"baselines": FREEZE, "proposed": ROOT / "results" / "FREEZE_proposed.json",
+             "prereg": ROOT / "results" / "FREEZE_prereg.json", "runs": ROOT / "results" / "FREEZE_runs.json"}
 
 
 def sha256(p: Path) -> str:
@@ -55,15 +56,31 @@ def proposed_files(cfg: dict) -> list[Path]:
     return files + [p for p in optional if p.exists()]
 
 
+def prereg_files(cfg: dict) -> list[Path]:
+    return [ROOT / "results" / "PREREGISTRATION.md"]
+
+
+def runs_files(cfg: dict) -> list[Path]:
+    """Checkpoints and histories of every trained run of the final analyses, plus the pre-registration."""
+    import runs
+
+    files = [ROOT / "results" / "PREREGISTRATION.md"]
+    for rid in runs.all_run_ids():
+        if runs.is_trained(cfg, rid):
+            sp = runs.spec(cfg, rid)
+            files += [sp["ckpt"], sp["hist"]]
+    return files
+
+
 def recipe_hash(cfg: dict, which: str = "baselines") -> str:
     """Hash of everything that defines the recipe and split (not of unrelated config sections)."""
-    if which == "proposed":
+    if which in ("proposed", "prereg", "runs"):
         return _hash({"seed": cfg["seed"], "proposed": cfg["proposed"], "benchmark": cfg["benchmark"]})
     return _hash({"seed": cfg["seed"], "split_ratios": cfg["split_ratios"], "benchmark": cfg["benchmark"]})
 
 
 def compute(cfg: dict, which: str = "baselines") -> dict:
-    files = baseline_files(cfg) if which == "baselines" else proposed_files(cfg)
+    files = {"baselines": baseline_files, "proposed": proposed_files, "prereg": prereg_files, "runs": runs_files}[which](cfg)
     return {"files": {str(p.relative_to(ROOT)): sha256(p) for p in files}, "recipe_sha256": recipe_hash(cfg, which)}
 
 
@@ -71,12 +88,19 @@ def make(which: str = "baselines") -> None:
     cfg = load_config()
     m = compute(cfg, which)
     m["frozen_at_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    m["note"] = ("D1/D2 split and the five baseline models are frozen. Do not retrain or re-split without a new manifest."
-                 if which == "baselines" else
-                 "The proposed model (seed 42) is frozen. A redesign is a separately labelled v2, never a silent retrain.")
+    m["note"] = {"baselines": "D1/D2 split and the five baseline models are frozen. Do not retrain or re-split without a new manifest.",
+                 "proposed": "The proposed model (seed 42) is frozen. A redesign is a separately labelled v2, never a silent retrain.",
+                 "prereg": "The pre-registration and the recipe it refers to are fixed before the new runs and test reads.",
+                 "runs": "Every trained run of the final analyses (seeds, ablation) is frozen before its single test pass."}[which]
     MANIFESTS[which].write_text(json.dumps(m, indent=1))
-    ckpts = ([ROOT / "models" / s["dir"] / "best.pt" for s in cfg["benchmark"]["models"].values()] if which == "baselines"
-             else [ROOT / "models" / cfg["proposed"]["dir"] / "best.pt"])
+    if which == "baselines":
+        ckpts = [ROOT / "models" / s["dir"] / "best.pt" for s in cfg["benchmark"]["models"].values()]
+    elif which == "proposed":
+        ckpts = [ROOT / "models" / cfg["proposed"]["dir"] / "best.pt"]
+    elif which == "runs":
+        ckpts = [p for p in runs_files(cfg) if p.suffix == ".pt"]
+    else:
+        ckpts = []
     for c in ckpts:  # checkpoints read-only
         os.chmod(c, stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
     print(f"froze {len(m['files'])} files + recipe hash -> {MANIFESTS[which]}")

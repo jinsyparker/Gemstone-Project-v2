@@ -1,0 +1,47 @@
+2026-11-05 21:45:46,234 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-05 21:45:46,531 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-05 21:45:46,535 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-05 21:45:46,668 INFO Missing keys (classifier.weight, classifier.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-11-05 21:45:46,718 INFO EfficientNetV2-S_s43 | tf_efficientnetv2_s.in1k | 20.2M params | device mps | label_smoothing None | seed 43 | overrides {}
+2026-11-05 21:47:13,855 INFO EfficientNetV2-S_s43 ep01 s1 train 2.029/0.382 val 1.140 acc 0.608 F1 0.5999 (87s)
+2026-11-05 21:48:40,933 INFO EfficientNetV2-S_s43 ep02 s1 train 0.885/0.715 val 0.726 acc 0.754 F1 0.7522 (86s)
+2026-11-05 21:50:07,938 INFO EfficientNetV2-S_s43 ep03 s1 train 0.616/0.810 val 0.594 acc 0.801 F1 0.7989 (86s)
+2026-11-05 21:51:34,902 INFO EfficientNetV2-S_s43 ep04 s1 train 0.506/0.842 val 0.502 acc 0.846 F1 0.8465 (86s)
+2026-11-05 21:53:01,864 INFO EfficientNetV2-S_s43 ep05 s1 train 0.422/0.871 val 0.445 acc 0.862 F1 0.8614 (86s)
+2026-11-05 21:54:28,832 INFO EfficientNetV2-S_s43 ep06 s1 train 0.367/0.884 val 0.416 acc 0.877 F1 0.8764 (86s)
+2026-11-05 21:55:55,870 INFO EfficientNetV2-S_s43 ep07 s1 train 0.329/0.903 val 0.381 acc 0.875 F1 0.8733 (86s)
+2026-11-05 21:57:22,595 INFO EfficientNetV2-S_s43 ep08 s1 train 0.301/0.905 val 0.357 acc 0.887 F1 0.8862 (86s)
+2026-11-05 21:58:49,650 INFO EfficientNetV2-S_s43 ep09 s1 train 0.274/0.917 val 0.334 acc 0.886 F1 0.8854 (86s)
+2026-11-05 22:00:16,475 INFO EfficientNetV2-S_s43 ep10 s1 train 0.272/0.913 val 0.317 acc 0.903 F1 0.9032 (86s)
+2026-11-05 22:09:31,022 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-05 22:09:31,302 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-05 22:09:31,304 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-05 22:09:31,307 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-05 22:09:31,454 INFO Missing keys (classifier.weight, classifier.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-11-05 22:09:31,468 INFO EfficientNetV2-S_s43 | tf_efficientnetv2_s.in1k | 20.2M params | device mps | label_smoothing None | seed 43 | overrides {}
+2026-11-05 22:12:14,372 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-05 22:12:14,674 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-05 22:12:14,679 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-05 22:12:14,808 INFO Missing keys (classifier.weight, classifier.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-11-05 22:12:14,822 INFO EfficientNetV2-S_s43 | tf_efficientnetv2_s.in1k | 20.2M params | device mps | label_smoothing None | seed 43 | overrides {}
+2026-11-05 22:12:15,215 INFO resumed EfficientNetV2-S_s43 at epoch 10
+2026-11-05 22:14:41,308 INFO EfficientNetV2-S_s43 ep11 s2 train 0.818/0.730 val 0.584 acc 0.809 F1 0.8045 (146s)
+2026-11-05 22:17:07,249 INFO EfficientNetV2-S_s43 ep12 s2 train 0.440/0.851 val 0.364 acc 0.877 F1 0.8747 (145s)
+2026-11-05 22:19:31,362 INFO EfficientNetV2-S_s43 ep13 s2 train 0.282/0.907 val 0.281 acc 0.905 F1 0.9029 (143s)
+2026-11-05 22:22:00,601 INFO EfficientNetV2-S_s43 ep14 s2 train 0.202/0.936 val 0.232 acc 0.930 F1 0.9289 (149s)
+2026-11-05 22:24:28,693 INFO EfficientNetV2-S_s43 ep15 s2 train 0.143/0.953 val 0.224 acc 0.939 F1 0.9380 (147s)
+2026-11-05 22:26:55,252 INFO EfficientNetV2-S_s43 ep16 s2 train 0.123/0.960 val 0.203 acc 0.938 F1 0.9372 (146s)
+2026-11-05 22:29:17,784 INFO EfficientNetV2-S_s43 ep17 s2 train 0.097/0.967 val 0.208 acc 0.939 F1 0.9386 (142s)
+2026-11-05 22:31:42,090 INFO EfficientNetV2-S_s43 ep18 s2 train 0.096/0.971 val 0.211 acc 0.944 F1 0.9434 (143s)
+2026-11-05 22:34:06,145 INFO EfficientNetV2-S_s43 ep19 s2 train 0.088/0.972 val 0.185 acc 0.948 F1 0.9479 (143s)
+2026-11-05 22:36:31,536 INFO EfficientNetV2-S_s43 ep20 s2 train 0.068/0.979 val 0.188 acc 0.944 F1 0.9440 (144s)
+2026-11-05 22:38:55,162 INFO EfficientNetV2-S_s43 ep21 s2 train 0.069/0.980 val 0.171 acc 0.948 F1 0.9483 (143s)
+2026-11-05 22:41:18,033 INFO EfficientNetV2-S_s43 ep22 s2 train 0.068/0.978 val 0.181 acc 0.943 F1 0.9424 (142s)
+2026-11-05 22:43:40,380 INFO EfficientNetV2-S_s43 ep23 s2 train 0.059/0.980 val 0.179 acc 0.947 F1 0.9465 (142s)
+2026-11-05 22:46:02,665 INFO EfficientNetV2-S_s43 ep24 s2 train 0.051/0.983 val 0.178 acc 0.951 F1 0.9505 (142s)
+2026-11-05 22:48:27,636 INFO EfficientNetV2-S_s43 ep25 s2 train 0.049/0.986 val 0.174 acc 0.947 F1 0.9464 (144s)
+2026-11-05 22:50:51,683 INFO EfficientNetV2-S_s43 ep26 s2 train 0.045/0.988 val 0.174 acc 0.950 F1 0.9492 (143s)
+2026-11-05 22:53:14,028 INFO EfficientNetV2-S_s43 ep27 s2 train 0.054/0.982 val 0.162 acc 0.954 F1 0.9533 (142s)
+2026-11-05 22:55:36,500 INFO EfficientNetV2-S_s43 ep28 s2 train 0.047/0.986 val 0.169 acc 0.951 F1 0.9507 (142s)
+2026-11-05 22:57:58,872 INFO EfficientNetV2-S_s43 ep29 s2 train 0.038/0.990 val 0.170 acc 0.954 F1 0.9534 (142s)
+2026-11-05 23:00:21,513 INFO EfficientNetV2-S_s43 ep30 s2 train 0.040/0.992 val 0.167 acc 0.950 F1 0.9493 (142s)

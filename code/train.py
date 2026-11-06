@@ -141,9 +141,10 @@ def train_model(cfg: dict, model: nn.Module, out_dir: Path, hist_path: Path, see
         model.load_state_dict(ck["model"])
         hist, state = ck["hist"], ck["state"]
         enter_stage(state["start"])
-        opt.load_state_dict(ck["opt"])
-        if sched is not None and ck.get("sched"):
-            sched.load_state_dict(ck["sched"])
+        if state["start"] != n1:  # resuming exactly at the stage boundary starts stage 2 with a fresh optimiser, as an uninterrupted run does
+            opt.load_state_dict(ck["opt"])
+            if sched is not None and ck.get("sched"):
+                sched.load_state_dict(ck["sched"])
         log.info("resumed %s at epoch %d", name, state["start"])
 
     cur_stage = (1 if state["start"] < n1 else 2) if opt is not None else None  # set when resumed
@@ -193,7 +194,8 @@ def train_model(cfg: dict, model: nn.Module, out_dir: Path, hist_path: Path, see
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--model", required=True)
+    ap.add_argument("--model", help="baseline name or Proposed (not needed with --run)")
+    ap.add_argument("--run", help="a registered run id from code/runs.py, e.g. Proposed_s43 or Abl-B_s44")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--label-smoothing", type=float)
     ap.add_argument("--s1-epochs", type=int)
@@ -206,24 +208,37 @@ def main() -> None:
     ap.add_argument("--config")
     a = ap.parse_args()
     cfg = load_config(a.config)
-    tag = a.tag or a.model
+    run = None
+    if a.run:
+        from runs import spec as run_spec
+
+        run = run_spec(cfg, a.run)
+        a.model, a.seed = run["model"], run["seed"]
+        if a.s2_epochs is None:
+            a.s2_epochs = run["s2_epochs"]
+        if run["legacy"] and not a.smoke:
+            raise SystemExit(f"{a.run} was trained in Deliverables 2 to 4 and is frozen; refusing to retrain it")
+    elif not a.model:
+        ap.error("give --model or --run")
+    tag = run["log_tag"] if run else (a.tag or a.model)
     (ROOT / "results" / "logs").mkdir(parents=True, exist_ok=True)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s",
                         handlers=[logging.StreamHandler(), logging.FileHandler(ROOT / "results" / "logs" / f"{tag}.log")])
     spec = {"timm": cfg["proposed"]["backbone"] + " + colour/texture branch", "dir": model_dir(cfg, a.model)} \
         if a.model == "Proposed" else cfg["benchmark"]["models"][a.model]
-    out_dir = Path(a.out_dir) if a.out_dir else ROOT / "models" / spec["dir"]
-    hist_path = ROOT / "results" / "baseline_history" / f"{tag}.json"
+    out_dir = run["out_dir"] if run else (Path(a.out_dir) if a.out_dir else ROOT / "models" / spec["dir"])
+    hist_path = run["hist"] if run else ROOT / "results" / "baseline_history" / f"{tag}.json"
     if a.smoke:
-        out_dir = ROOT / "results" / "_smoke" / spec["dir"]
+        out_dir = ROOT / "results" / "_smoke" / tag
         hist_path = ROOT / "results" / "_smoke" / f"{tag}.json"
     set_seed(a.seed)
-    model = build_model(cfg, a.model, pretrained=True)
-    log.info("%s | %s | %.1fM params | device %s | label_smoothing %s", a.model, spec["timm"],
-             count_params(model) / 1e6, get_device(), a.label_smoothing)
+    model = build_model(cfg, a.model, pretrained=True, overrides=run["overrides"] if run else None)
+    log.info("%s | %s | %.1fM params | device %s | label_smoothing %s | seed %d%s", tag, spec["timm"],
+             count_params(model) / 1e6, get_device(), a.label_smoothing, a.seed, f" | overrides {run['overrides']}" if run else "")
     train_model(cfg, model, out_dir, hist_path, seed=a.seed, label_smoothing=a.label_smoothing,
                 limit=64 if a.smoke else None, s1_epochs=1 if a.smoke else a.s1_epochs,
-                s2_epochs=1 if a.smoke else a.s2_epochs, resume=a.resume, name=tag, variant=a.variant)
+                s2_epochs=(0 if (a.smoke and a.s2_epochs == 0) else 1) if a.smoke else a.s2_epochs, resume=a.resume,
+                name=tag, variant=a.variant)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,15 @@
+2026-11-06 07:16:14,397 INFO Loading pretrained weights from Hugging Face hub (timm/tf_efficientnetv2_s.in1k)
+2026-11-06 07:16:14,680 INFO HTTP Request: HEAD https://huggingface.co/timm/tf_efficientnetv2_s.in1k/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-06 07:16:14,683 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-06 07:16:14,686 INFO [timm/tf_efficientnetv2_s.in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-11-06 07:16:14,843 INFO Abl-A_s44 | tf_efficientnetv2_s.in1k + colour/texture branch | 20.5M params | device mps | label_smoothing None | seed 44 | overrides {'use_rgb': True, 'use_ct': False, 'fusion': 'none'}
+2026-11-06 07:17:43,718 INFO Abl-A_s44 ep01 s1 train 0.811/0.792 val 0.381 acc 0.897 F1 0.8930 (89s)
+2026-11-06 07:19:12,595 INFO Abl-A_s44 ep02 s1 train 0.340/0.908 val 0.272 acc 0.930 F1 0.9297 (88s)
+2026-11-06 07:20:41,108 INFO Abl-A_s44 ep03 s1 train 0.257/0.922 val 0.235 acc 0.921 F1 0.9197 (88s)
+2026-11-06 07:22:10,759 INFO Abl-A_s44 ep04 s1 train 0.203/0.936 val 0.235 acc 0.926 F1 0.9253 (89s)
+2026-11-06 07:23:40,072 INFO Abl-A_s44 ep05 s1 train 0.184/0.942 val 0.210 acc 0.934 F1 0.9341 (89s)
+2026-11-06 07:25:08,759 INFO Abl-A_s44 ep06 s1 train 0.168/0.947 val 0.201 acc 0.935 F1 0.9345 (88s)
+2026-11-06 07:26:37,228 INFO Abl-A_s44 ep07 s1 train 0.152/0.951 val 0.227 acc 0.927 F1 0.9272 (88s)
+2026-11-06 07:28:05,747 INFO Abl-A_s44 ep08 s1 train 0.130/0.959 val 0.189 acc 0.943 F1 0.9424 (88s)
+2026-11-06 07:29:34,726 INFO Abl-A_s44 ep09 s1 train 0.122/0.959 val 0.206 acc 0.927 F1 0.9276 (88s)
+2026-11-06 07:31:03,178 INFO Abl-A_s44 ep10 s1 train 0.117/0.961 val 0.188 acc 0.944 F1 0.9444 (88s)

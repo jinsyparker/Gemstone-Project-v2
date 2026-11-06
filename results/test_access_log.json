@@ -343,5 +343,251 @@
   "conditions": 18,
   "purpose": "robustness: 18 perturbation conditions",
   "time_utc": "2026-10-16T12:12:54+00:00"
+ },
+ {
+  "model": "Proposed_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "cfe48502bded73660d5035e7cad7507e784569cfaecaf801fd50f2d12d69af41",
+  "regression_vs_earlier_outputs": {
+   "clean_max_abs_logit_diff": 0.0,
+   "clean_pred_identical": true,
+   "robustness_min_agreement": 1.0
+  },
+  "time_utc": "2026-11-06T03:50:17+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "a5d271480a6e8342588711e7bdf57ab1fe9e84d7030727efd48af8c350acf507",
+  "regression_vs_earlier_outputs": {
+   "clean_max_abs_logit_diff": 0.0,
+   "clean_pred_identical": true,
+   "robustness_min_agreement": 1.0
+  },
+  "time_utc": "2026-11-06T03:59:58+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "e55d90dc1660872352a4a4825a5b2fd440222c878f1dd59c315c4c069dad1836",
+  "regression_vs_earlier_outputs": {
+   "clean_max_abs_logit_diff": 0.0,
+   "clean_pred_identical": true,
+   "robustness_min_agreement": 1.0
+  },
+  "time_utc": "2026-11-06T04:09:16+00:00"
+ },
+ {
+  "model": "Proposed_s43",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "90d5077ff1de7ddb5d5d4072e3439115f52688557aac7f86eb72d3f92eff2eec",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T04:18:58+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny_s43",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "4d33861fdd2fb90b89daf4eb653bcae0e03dbadfd1ec3af7c0139285ed034040",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T04:28:40+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S_s43",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "eb82fa111f1ec2c2e95180e50f6b25f3373f00518dc421c9f6a335eefa4e765f",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T04:55:41+00:00"
+ },
+ {
+  "model": "Proposed_s44",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "dcbd63862d2aa88ff3f7da739da1094142c0bdef257535b6818dc0f5b2fd43f5",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T05:05:14+00:00"
+ },
+ {
+  "model": "ConvNeXt-Tiny_s44",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "51d58c38f87cd6bb2d762ba768fb8b2e97b36a278326449a23871aa391ff0491",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T05:14:34+00:00"
+ },
+ {
+  "model": "EfficientNetV2-S_s44",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "b8bc099e87a6fc3f814f669d939cf312f221284aa78b66b6e0f07e879f1b352a",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T05:23:38+00:00"
+ },
+ {
+  "model": "ResNet50_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "a793e6490955201beb5a8c3db8e83cdfa8c5e27bc881199257526023750e31ea",
+  "regression_vs_earlier_outputs": {
+   "clean_max_abs_logit_diff": 0.0,
+   "clean_pred_identical": true,
+   "robustness_min_agreement": 1.0
+  },
+  "time_utc": "2026-11-06T05:29:15+00:00"
+ },
+ {
+  "model": "DenseNet121_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "7490b038e655c8608a748f68a6166ac18033f558a4405f61d8f6c50c231a09f9",
+  "regression_vs_earlier_outputs": {
+   "clean_max_abs_logit_diff": 0.0,
+   "clean_pred_identical": true,
+   "robustness_min_agreement": 1.0
+  },
+  "time_utc": "2026-11-06T05:34:26+00:00"
+ },
+ {
+  "model": "MobileNetV2_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "834cf1640eaa911e552bf34eb394bbe2a8d96d3f52ca83ec1d31a5bf7e6c4e5b",
+  "regression_vs_earlier_outputs": {
+   "clean_max_abs_logit_diff": 0.0,
+   "clean_pred_identical": true,
+   "robustness_min_agreement": 1.0
+  },
+  "time_utc": "2026-11-06T05:36:48+00:00"
+ },
+ {
+  "model": "Abl-A_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "b9e2fb83205112ae5fbc55e164c01c4a2081e0116be1dae052e28de332442d8f",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T05:45:42+00:00"
+ },
+ {
+  "model": "Abl-A_s43",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "ca0b38f9860d3e3046a6db68d51f768765579205b85fd4b86ee7fea92d0a8108",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T05:54:46+00:00"
+ },
+ {
+  "model": "Abl-A_s44",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "ffa002145b1545ce66c55306c167475dde5785e9aa9d76083ef8f94d56ec8d45",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T06:03:40+00:00"
+ },
+ {
+  "model": "Abl-B_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "36b814b13f0ea1041ff648bbe0e3249340837964b09c1bbc325767e8b4029362",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T06:05:18+00:00"
+ },
+ {
+  "model": "Abl-B_s43",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "db3e023912ee4c052acb6162c2b35740bc18e7e37f4919d09c4152382df99bec",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T06:06:41+00:00"
+ },
+ {
+  "model": "Abl-B_s44",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "e0c51bc24d28d78d84fc72d0109bc791ba5249b4f6c431d6399904adb6ef8673",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T06:08:11+00:00"
+ },
+ {
+  "model": "Abl-C_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "1d5fdbceeeb56ec44570451b9df1954d3e219b143a91aa3a6bca0163aa9ea2c8",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T06:17:54+00:00"
+ },
+ {
+  "model": "Abl-C_s43",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "daa931324ed29279f4a6cf9c2f71911259341196edd611ecd312a67bfdc3de5c",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T06:27:41+00:00"
+ },
+ {
+  "model": "Abl-C_s44",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "146009d02f0b898803e4872aa318e1bced223317c550e128b07015d4a3f65f99",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T06:37:19+00:00"
+ },
+ {
+  "model": "Abl-D_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "ddd036a2aa4b05ebeca2b0ebf22fcd00c368c906660ada5f358ae953925c5da2",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T06:46:52+00:00"
+ },
+ {
+  "model": "Abl-D_s43",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "25dd73244e415c375add17ad49ee695a9aa5fc5b26ea75a7f87540a31e1179cf",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T06:56:31+00:00"
+ },
+ {
+  "model": "Abl-D_s44",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "0e5e51171c4ebfb0c730d7f93c3708d49c39eaf92fce37e67bed193061b3efed",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T07:06:21+00:00"
+ },
+ {
+  "model": "Abl-A-FT_s42",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "dfd965505b72a45d32a478dec3f56551750e15ce12d7e7277e3dca3bb3bbdf20",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T07:15:17+00:00"
+ },
+ {
+  "model": "Abl-A-FT_s43",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "60b65ab0afe1f58843d5102f71a5bec7a7ada1d02c2d787b3365b900eef26888",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T07:24:21+00:00"
+ },
+ {
+  "model": "Abl-A-FT_s44",
+  "split": "test",
+  "purpose": "final_eval: the pre-registered single pass (clean, 6 background variants, 18 perturbations, Grad-CAM)",
+  "ckpt_sha256": "e37ea5bfdaba9ae1291f5161e1c5a9dc82c2361a95e2c3a75634f0dda16b86f6",
+  "regression_vs_earlier_outputs": {},
+  "time_utc": "2026-11-06T07:33:36+00:00"
+ },
+ {
+  "model": "Proposed_s42 + ConvNeXt-Tiny_s42",
+  "split": "test",
+  "purpose": "error-example figure: display of test images, after all analyses were frozen; no analysis reads this",
+  "time_utc": "2026-11-06T08:58:49+00:00"
  }
 ]

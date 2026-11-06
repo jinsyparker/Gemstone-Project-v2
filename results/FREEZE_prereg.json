@@ -1,0 +1,8 @@
+{
+ "files": {
+  "results/PREREGISTRATION.md": "dafe36871b10161ec7fdeea3e2ce2ca40b24b3694fc05d70538312006b16359f"
+ },
+ "recipe_sha256": "17003aa17b2768895c72821e516471ac3b5cf1833092c8006966041552b47679",
+ "frozen_at_utc": "2026-11-05T14:33:42+00:00",
+ "note": "The pre-registration and the recipe it refers to are fixed before the new runs and test reads."
+}
